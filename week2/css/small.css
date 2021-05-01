@@ -1,10 +1,8 @@
-/* Give the document some structure. */
 body {
   margin: 0 auto;
   max-width: 948px;
 }
 
-/* Create a responsive, centered, three-column grid. */
 .card-container {
   align-items: start;
   display: grid;
