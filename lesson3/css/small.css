@@ -62,9 +62,7 @@
 a {
   color: black;
 }
-#nav {
-  display: block;
-}
+
 li {
   display: inline;
   padding: 5px;
