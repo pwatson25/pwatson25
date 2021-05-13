@@ -1,79 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.grid {
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    ". main main main main ."
-    ". footer footer footer footer ."
-    ;
- }
- .grid > * {
-    border-radius: 5px;
-  }
-
-header {
-  grid-area: header;
-  background-color: #27B9F2;
-  display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header > img {
-    display: inline;
-    float: left;
-    width: 8%;
-    padding: 0.75em;
-}
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  grid-area: nav;
-  background-color: #F2BC1B;
-}
-main {
-  grid-area: main;
-  display: grid;
-  grid-auto-flow: row;
-}
-main > * {
-    border-radius: 5px;
-}
-
-footer {
-  grid-column: footer;
-  background-color: #F2BC1B;
-  min-height: 50px;
-}
-.hero > img {
-    display: block;
-    max-width: 100%;
-}
-.five_day {
-    background-color: #65498C;
-    color: whitesmoke;
-}
-
-
-* {
-  box-sizing: border-box;
-}
-a {
-  color: black;
-}
-
-li {
-  display: inline;
-  padding: 5px;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
 </head>
 <body>
 
@@ -95,6 +28,13 @@ li {
       </div>
       <div class="five_day">
           <h2>5 Day Forcast</h2>
+          <div class="forecast">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          </div>
       </div>
       <div class="article">
           <h2>Article Title</h2>
@@ -103,6 +43,9 @@ li {
         </p>
       </div>
   </main>
+  <div class="contact">
+      Locating map
+  </div>
   <footer>Footer</footer>
 </div>
 
