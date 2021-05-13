@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 .grid {
   max-width: 100%;
   margin: 0 auto;
@@ -11,8 +10,12 @@
     "header header"
     "nav nav"
     "main main"
-    "map contact"
+    "map map"
+    "contact contact"
     "footer footer";
+}
+.map {
+  margin: 1em;
 }
 .grid > * {
   border-radius: 5px;
@@ -78,6 +81,9 @@ main h2 {
 }
 .forecast > img {
   padding: 10px;
+}
+.forecast {
+  flex-direction: column;
 }
 .map {
   grid-area: map;
