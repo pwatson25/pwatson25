@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    ". main main main main ."
+    ". footer footer footer footer ."
+    ;
+ }
+ .grid > * {
+    border-radius: 5px;
+  }
+
+header {
+  grid-area: header;
+  background-color: #27B9F2;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header > img {
+    display: inline;
+    float: left;
+    width: 8%;
+    padding: 0.75em;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  grid-area: nav;
+  background-color: #F2BC1B;
+}
+main {
+  grid-area: main;
+  display: grid;
+  grid-auto-flow: row;
+}
+main > * {
+    border-radius: 5px;
+}
+
+footer {
+  grid-column: footer;
+  background-color: #F2BC1B;
+  min-height: 50px;
+}
+.hero > img {
+    display: block;
+    max-width: 100%;
+}
+.five_day {
+    background-color: #65498C;
+    color: whitesmoke;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: black;
+}
+
+li {
+  display: inline;
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+  <main>
+      <div class="hero">
+          <img src="/lesson4/images/weather_backround_2.svg">
+      </div>
+      <div class="five_day">
+          <h2>5 Day Forcast</h2>
+      </div>
+      <div class="article">
+          <h2>Article Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula tellus, efficitur vel dictum id, volutpat eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Pellentesque venenatis, dolor sed cursus dapibus, lacus lacus ornare erat, sit amet pretium orci dolor ut turpis. Aliquam eget dui in sapien scelerisque feugiat vitae in libero. Suspendisse aliquam molestie eleifend. Morbi posuere vitae magna et sodales. Proin id nisl arcu. Etiam et turpis eget turpis placerat vehicula. Nunc ac lacus nec tortor molestie sodales. Nulla venenatis lacus ac massa ultricies, sed sagittis orci efficitur. Suspendisse auctor id risus at luctus. Aliquam felis diam, lacinia rhoncus justo a, volutpat pellentesque dui. Suspendisse lacinia faucibus gravida. Duis interdum, orci molestie lobortis tincidunt, tellus velit cursus metus, eget luctus ante arcu eu tortor.
+        </p>
+      </div>
+  </main>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>
