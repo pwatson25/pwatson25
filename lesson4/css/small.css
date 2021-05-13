@@ -85,6 +85,9 @@ main h2 {
 .forecast {
   flex-direction: column;
 }
+.article_image {
+  float: right;
+}
 .map {
   grid-area: map;
   background-color: #27b9f2;
