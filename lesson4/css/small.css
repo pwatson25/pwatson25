@@ -10,7 +10,7 @@
     "header header header header header header"
     "nav nav nav nav nav nav"
     ". main main main main ."
-    ". contact contact contact contact ."
+    ". map map contact contact ."
     "footer footer footer footer footer footer";
 }
 .grid > * {
@@ -33,13 +33,32 @@ nav {
   grid-area: nav;
   background-color: #f2bc1b;
 }
-a {
-  color: black;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 li {
-  display: inline;
-  padding: 5px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #f21313;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #c7980b;
+}
+.hero > img {
+  display: block;
+  max-width: 100%;
 }
 main {
   grid-area: main;
@@ -60,17 +79,23 @@ main h2 {
 .forecast > img {
   padding: 10px;
 }
+.map {
+  grid-area: map;
+  background-color: #27b9f2;
+  margin-right: 1em;
+}
 .contact {
   grid-area: contact;
+  flex-flow: column;
   background-color: #27b9f2;
+  margin-left: 1em;
 }
-
+.social_share {
+  flex-flow: row;
+}
 footer {
+  margin-top: 1em;
   grid-column: footer;
   background-color: #f2bc1b;
   min-height: 50px;
-}
-.hero > img {
-  display: block;
-  max-width: 100%;
 }
