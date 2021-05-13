@@ -1,17 +1,18 @@
 * {
   box-sizing: border-box;
 }
+
 .grid {
   max-width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+
   grid-template-areas:
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    ". main main main main ."
-    ". map map contact contact ."
-    "footer footer footer footer footer footer";
+    "header header"
+    "nav nav"
+    "main main"
+    "map contact"
+    "footer footer";
 }
 .grid > * {
   border-radius: 5px;
@@ -57,19 +58,18 @@ li a:hover {
   background-color: #c7980b;
 }
 .hero > img {
-  display: block;
   max-width: 100%;
 }
 main {
   grid-area: main;
-  display: grid !important;
-  grid-auto-flow: row;
+  flex-flow: column;
 }
 main h2 {
   background-color: #65498c;
   color: whitesmoke;
   border-radius: 5px;
   padding: 0.5em;
+  width: 100%;
 }
 .forecast {
   display: flex;
@@ -86,9 +86,9 @@ main h2 {
 }
 .contact {
   grid-area: contact;
-  flex-flow: column;
   background-color: #27b9f2;
   margin-left: 1em;
+  flex-flow: column;
 }
 .social_share {
   flex-flow: row;
