@@ -90,6 +90,9 @@ main h2 {
   background-color: #27b9f2;
   margin-right: 1em;
 }
+.map img {
+  padding: 0.5em;
+}
 .contact {
   grid-area: contact;
   background-color: #27b9f2;
