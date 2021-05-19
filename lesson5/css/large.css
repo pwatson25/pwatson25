@@ -7,16 +7,26 @@
     width: 15em;
     height: 15em;
     border-radius: 0 50% 50% 50%;
-    border: 3px solid black;
+    border: 2px solid black;
     transform: rotate(45deg);
     margin-top: 20px;
-    padding: 1rem;
     box-shadow: 0 0 30px #111;
     opacity: 0.8;
     line-height: 1em;
   }
-  .current_weather > * {
+  .weather_content {
     transform: rotate(-45deg);
+    position: absolute;
+    left: 2.75em;
+    top: 1.5em;
+    font-weight: bold;
+  }
+  .weather_content h2 {
+    font-size: 1em;
+    width: 9em;
+    /*
+    margin-left: 1em;
+    */
   }
 }
 @media only screen and (min-width: 860px) {

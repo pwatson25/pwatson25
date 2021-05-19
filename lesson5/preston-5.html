@@ -22,7 +22,7 @@
   <ul  class="menu">
     <li><a class="ham" href="#">☰ Menu</a></li>
     <li><a href="#">Home</a></li>
-    <li><a href="#">Preston</a></li>
+    <li><a href="#" class="active">Preston</a></li>
     <li><a href="#">Soda Springs</a></li>
     <li><a href="#">Fish Haven</a></li>
     <li><a href="#">Storm Center</a></li>
@@ -33,11 +33,13 @@
       <div class="hero">
           <img src="/lesson4/images/weather_background_2.svg" alt="hero image">
           <div class="current_weather">
-            <h2>Current Weather</h2>
+            <div class="weather_content">
+            <h2><span>Current Weather</span></h2>
             <p>Temp: <span id="temp"></span></p>
             <p>Conditions: <span id="condition"></span></p>
             <p>High: <span id="high"></span></p>
             <p>Low: <span id="low"></span></p>
+            </div>
           </div>
       </div>
           <h2>5 Day Forcast</h2>
@@ -50,14 +52,16 @@
           </div>
           <div class="article">
           <h2>Article Title</h2>
-          <div class="article_image">
+          <div class="article_content">
+          <picture class="article_image">
             <source media="max-width: 400px" srcset="./images/winter_small.webp">
             <source media="max-width: 800px" srcset="./images/winter_medium.webp">
             <img src="./images/winter_large.webp" alt="photo of severe snow">
-          </div>
+          </picture>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula tellus, efficitur vel dictum id, volutpat eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Pellentesque venenatis, dolor sed cursus dapibus, lacus lacus ornare erat, sit amet pretium orci dolor ut turpis. Aliquam eget dui in sapien scelerisque feugiat vitae in libero. Suspendisse aliquam molestie eleifend. Morbi posuere vitae magna et sodales. Proin id nisl arcu. Etiam et turpis eget turpis placerat vehicula. Nunc ac lacus nec tortor molestie sodales. Nulla venenatis lacus ac massa ultricies, sed sagittis orci efficitur. Suspendisse auctor id risus at luctus. Aliquam felis diam, lacinia rhoncus justo a, volutpat pellentesque dui. Suspendisse lacinia faucibus gravida. Duis interdum, orci molestie lobortis tincidunt, tellus velit cursus metus, eget luctus ante arcu eu tortor.
         </p>
+        </div>
         </div>
   </main>
 
@@ -66,12 +70,12 @@
   </div>
   <div class="contact">
     <h3>Peter J Watson</h3>
-    <h3>peterwatson122@gmail.com</h3>
-    <h3>555-555-5555</h3>
+    <div><img src="./images/gmail.webp" alt="email icon"><h3>peterwatson122@gmail.com</h3></div>
+    <div><img src="./images/phone.png" alt="phone icon"><h3>555-555-5555</h3></div>
     <div class="social_share">
-    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
-    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
-    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
+    <img src="./images/facebook.png" alt="placeholder social share icons">
+    <img src="./images/pinterest.png" alt="placeholder social share icons">
+    <img src="./images/youtube.png" alt="placeholder social share icons">
     </div>
   </div>
 

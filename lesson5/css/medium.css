@@ -36,4 +36,12 @@
   .forecast {
     flex-direction: row;
   }
+  .article_image {
+    display: block;
+  }
+  .article_image img {
+    width: 45%;
+    margin: 1% 0 2% 1%;
+    float: right;
+  }
 }

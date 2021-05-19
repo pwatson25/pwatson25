@@ -59,6 +59,9 @@ nav {
 .menu a:hover {
   text-decoration: underline;
 }
+li a.active {
+  text-decoration: underline;
+}
 .responsive li {
   display: block;
 }
@@ -88,9 +91,20 @@ main h2 {
 .forecast {
   flex-direction: column;
 }
+
 .article_image {
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+.article_image img {
+  width: 95%;
+}
+/*.article_content {
+  border: 2px solid #27b9f2;
+  padding: 0.75em;
+}
+*/
 .map {
   grid-area: map;
   background-color: #27b9f2;
@@ -102,12 +116,32 @@ main h2 {
 .contact {
   grid-area: contact;
   background-color: #27b9f2;
-  margin-left: 1em;
   flex-flow: column;
+}
+.contact > div {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+.contact img {
+  width: 8%;
+  padding-right: 1em;
 }
 .social_share {
   flex-flow: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+.social_share img {
+  width: 12%;
+  padding: 0.5em;
+}
+.social_share img:hover {
+  cursor: pointer;
+}
+
 footer {
   margin-top: 1em;
   grid-column: footer;
