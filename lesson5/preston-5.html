@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+
+</head>
+<body>
+
+<div class="grid">
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav>
+  <ul  class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Preston</a></li>
+    <li><a href="#">Soda Springs</a></li>
+    <li><a href="#">Fish Haven</a></li>
+    <li><a href="#">Storm Center</a></li>
+    <li><a href="#">Gallery</a></li>
+  </ul>
+</nav>
+  <main>
+      <div class="hero">
+          <img src="/lesson4/images/weather_background_2.svg" alt="hero image">
+          <div class="current_weather">
+            <h2>Current Weather</h2>
+            <p>Temp: <span id="temp"></span></p>
+            <p>Conditions: <span id="condition"></span></p>
+            <p>High: <span id="high"></span></p>
+            <p>Low: <span id="low"></span></p>
+          </div>
+      </div>
+          <h2>5 Day Forcast</h2>
+          <div class="forecast">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
+          </div>
+          <div class="article">
+          <h2>Article Title</h2>
+          <div class="article_image">
+            <source media="max-width: 400px" srcset="./images/winter_small.webp">
+            <source media="max-width: 800px" srcset="./images/winter_medium.webp">
+            <img src="./images/winter_large.webp" alt="photo of severe snow">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula tellus, efficitur vel dictum id, volutpat eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Pellentesque venenatis, dolor sed cursus dapibus, lacus lacus ornare erat, sit amet pretium orci dolor ut turpis. Aliquam eget dui in sapien scelerisque feugiat vitae in libero. Suspendisse aliquam molestie eleifend. Morbi posuere vitae magna et sodales. Proin id nisl arcu. Etiam et turpis eget turpis placerat vehicula. Nunc ac lacus nec tortor molestie sodales. Nulla venenatis lacus ac massa ultricies, sed sagittis orci efficitur. Suspendisse auctor id risus at luctus. Aliquam felis diam, lacinia rhoncus justo a, volutpat pellentesque dui. Suspendisse lacinia faucibus gravida. Duis interdum, orci molestie lobortis tincidunt, tellus velit cursus metus, eget luctus ante arcu eu tortor.
+        </p>
+        </div>
+  </main>
+
+  <div class="map">
+    <img src="https://via.placeholder.com/350x350" alt="preston map placeholder image">
+  </div>
+  <div class="contact">
+    <h3>Peter J Watson</h3>
+    <h3>peterwatson122@gmail.com</h3>
+    <h3>555-555-5555</h3>
+    <div class="social_share">
+    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
+    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
+    <img src="https://via.placeholder.com/50x50" alt="placeholder social share icons">
+    </div>
+  </div>
+
+  <footer>   
+    <div>
+    &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+ </div>
+ Last Updated: 
+ <span id="lastUpdate"></span>
+</footer>
+</div>
+<script src="js/javascript.js"></script>
+</body>
+</html>

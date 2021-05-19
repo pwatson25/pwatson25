@@ -1,0 +1,35 @@
+@media only screen and (min-width: 969px) {
+  .current_weather {
+    position: absolute;
+    top: 11rem;
+    left: 23rem;
+    background: radial-gradient(#eee, #4567aa);
+    width: 15em;
+    height: 15em;
+    border-radius: 0 50% 50% 50%;
+    border: 3px solid black;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    padding: 1rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+    line-height: 1em;
+  }
+  .current_weather > * {
+    transform: rotate(-45deg);
+  }
+}
+@media only screen and (min-width: 860px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      ". main main main main ."
+      ". map map contact contact ."
+      "footer footer footer footer footer footer";
+  }
+}

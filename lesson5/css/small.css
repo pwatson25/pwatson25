@@ -57,7 +57,7 @@ nav {
 }
 
 .menu a:hover {
-  background-color: #c7980b;
+  text-decoration: underline;
 }
 .responsive li {
   display: block;
@@ -76,6 +76,7 @@ main h2 {
   padding: 0.5em;
   width: 100%;
 }
+
 .forecast {
   display: flex;
   align-content: center;
