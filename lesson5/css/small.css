@@ -14,9 +14,7 @@
     "contact contact"
     "footer footer";
 }
-.map {
-  margin: 1em;
-}
+
 .grid > * {
   border-radius: 5px;
   display: flex;
@@ -79,7 +77,9 @@ main h2 {
   padding: 0.5em;
   width: 100%;
 }
-
+.current_weather p {
+  padding-left: 1em;
+}
 .forecast {
   display: flex;
   align-content: center;
@@ -110,22 +110,43 @@ main h2 {
   background-color: #27b9f2;
   margin-right: 1em;
 }
-.map img {
-  padding: 0.5em;
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 20em;
+  width: 500px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 20em;
+  width: 500px;
+}
+iframe {
+  width: 500px;
+  height: 20em;
 }
 .contact {
   grid-area: contact;
   background-color: #27b9f2;
   flex-flow: column;
+  max-height: 20em;
 }
-.contact > div {
+.contact > * {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-content: center;
 }
+.phone {
+  color: #24bf2f;
+  margin-right: 5px;
+}
+.contact h3 {
+  font-size: 1.5em;
+}
 .contact img {
-  width: 8%;
+  width: 2.5em;
   padding-right: 1em;
 }
 .social_share {
@@ -135,7 +156,7 @@ main h2 {
   align-content: center;
 }
 .social_share img {
-  width: 12%;
+  width: 3em;
   padding: 0.5em;
 }
 .social_share img:hover {
