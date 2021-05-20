@@ -22,8 +22,8 @@
     font-weight: bold;
   }
   .weather_content h2 {
-    font-size: 1em;
-    width: 11em;
+    font-size: 1.2em;
+    width: 9em;
   }
 }
 @media only screen and (min-width: 860px) {

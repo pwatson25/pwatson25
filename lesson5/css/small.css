@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Gloria Hallelujah", Helvetica, cursive;
+  font-family: "Short Stack", Helvetica, cursive;
 }
 .grid {
   max-width: 100%;
@@ -74,7 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Short Stack", cursive;
+  font-family: "Annie Use Your Telescope", cursive;
 }
 main {
   grid-area: main;
