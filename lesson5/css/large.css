@@ -23,10 +23,7 @@
   }
   .weather_content h2 {
     font-size: 1em;
-    width: 9em;
-    /*
-    margin-left: 1em;
-    */
+    width: 11em;
   }
 }
 @media only screen and (min-width: 860px) {
