@@ -14,9 +14,6 @@
     "contact contact"
     "footer footer";
 }
-.map {
-  margin: 1em;
-}
 .grid > * {
   border-radius: 5px;
   display: flex;
