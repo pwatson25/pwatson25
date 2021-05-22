@@ -16,7 +16,7 @@ let strLMD = + lastModDate.getMonth()+1 + "/" + lastModDate.getDate() + "/"
            + lastModDate.getMinutes() + ":" + lastModDate.getSeconds();
 document.getElementById("lastUpdate").textContent = strLMD;
 
-if (thedate.getDay() == 6) {
+if (thedate.getDay() == 5) {
     document.querySelector('.announcement').style.display = 'block';
 }
 
