@@ -1,7 +1,7 @@
 @media only screen and (min-width: 969px) {
   .current_weather {
     position: absolute;
-    top: 11rem;
+    top: 15rem;
     left: 23rem;
     background: radial-gradient(#eee, #4567aa);
     width: 15em;
