@@ -111,16 +111,58 @@ main h2 {
 .current_weather p {
   padding-left: 1em;
 }
-.forecast {
+
+.forecast > img {
+  padding: 10px;
+}
+.responsive-table {
+  display: block;
+}
+
+[class^="day-section"] {
+  margin-bottom: 1rem;
+}
+
+.forecast-day,
+.forecast-icon,
+.data {
+  padding: 1rem;
+  border: 1px solid #333;
+  margin: -1px 0 0 -1px;
+  box-sizing: border-box;
+  background: linear-gradient(#eee, #96d9c6);
   display: flex;
   align-content: center;
   justify-content: center;
 }
-.forecast > img {
-  padding: 10px;
+.forecast-icon img {
+  width: 5em;
 }
-.forecast {
-  flex-direction: column;
+.forecast-max {
+  font-size: 1.3em;
+}
+.forecast-min {
+  margin-top: 8px;
+}
+p.forecast:hover {
+  background: #c8f1c5;
+}
+
+.forecast-day {
+  background: #65498c;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .responsive-table {
+    display: flex;
+  }
+  [class^="day-section"] {
+    flex-grow: 1;
+  }
 }
 
 .article_image {

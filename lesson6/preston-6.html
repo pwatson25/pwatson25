@@ -43,23 +43,61 @@
           <div class="current_weather">
             <div class="weather_content">
             <h2><span>Current Weather</span></h2>
-            <p>Temp: <span id="current-temp"></span><span>&deg; F</span></p>
+            <p>Currently: <span id="condition"></span><span></span></p>
             <p>High: <span id="temp-max"></span><span>&deg; F</span></p>
             <p>Low: <span id="temp-min"></span><span>&deg; F</span></p>
-            <p>Conditions: <span id="condition"></span></p>
+            <p>Wind Speed: <span id="wind-speed"></span>MPH</p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
           </div>
       </div>
           <h2>5 Day Forcast</h2>
           <div class="forecast">
-          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
-          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
-          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
-          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
-          <img src="https://via.placeholder.com/150" alt="placeholder weather icon">
-          </div>
+            <div class="responsive-table">
+              <section class="day-section-monday">
+                <div class="forecast-day"></div>
+                <div class="forecast-icon"><img src="#" alt="" class="weatherIcon"></div>
+                <div class="data">
+                  <div class="forecast-max"></div>/<div class="forecast-min"></div>
+                  </div>
+              </section>
+        
+              <section class="day-section-tuesday">
+                <div class="forecast-day"></div>
+                <div class="forecast-icon"><img src="#" alt="" class="weatherIcon"></div>
+                <div class="data">
+                <div class="forecast-max"></div>/<div class="forecast-min"></div>
+                </div>
+              </section>
+        
+              <section class="day-section-wednesday">
+                <div class="forecast-day"></div>
+                <div class="forecast-icon"><img src="#" alt="" class="weatherIcon"></div>
+                <div class="data">
+                  <div class="forecast-max"></div>/<div class="forecast-min"></div>
+                  </div>
+              </section>
+        
+              <section class="day-section-thursday">
+                <div class="forecast-day"></div>
+                <div class="forecast-icon"><img src="#" alt="" class="weatherIcon"></div>
+                <div class="data">
+                  <div class="forecast-max"></div>/<div class="forecast-min"></div>
+                  </div>
+              </section>
+        
+              <section class="day-section-friday">
+                <div class="forecast-day"></div>
+                <div class="forecast-icon"><img src="#" alt="" class="weatherIcon"></div>
+                <div class="data">
+                  <div class="forecast-max"></div>/<div class="forecast-min"></div>
+                  </div>
+              </section>
+            </div>
+        
+            <p style="clear:right"></p>
           <div class="article">
-          <h2>Article Title</h2>
+          <h2>Winter In June???</h2>
           <picture class="article_image">
             <source media="(max-width: 400px)" srcset="./images/winter_small.webp">
             <source media="(max-width: 800px)" srcset="./images/winter_medium.webp">
@@ -98,7 +136,7 @@
 </footer>
 </div>
 <script src="js/javascript.js"></script>
-<script src="scripts/owm-api-fetch.js"></script>
+<script src="js/weather.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
