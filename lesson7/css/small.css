@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Short Stack", Helvetica, cursive;
+}
+.announcement {
+  display: none;
+  background-color: #f21313;
+  border: 2px solid#F21313;
+  border-radius: 5px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 12px;
+  right: 0%;
+  font-size: 2em;
+  padding: 8px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  background: #bbb;
+  border-radius: 5px;
+}
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "map map"
+    "contact contact"
+    "footer footer";
+}
+
+.grid > * {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  grid-area: header;
+  background-color: #27b9f2;
+}
+header > img {
+  float: left;
+  width: 6rem;
+  padding: 0.75em;
+}
+nav {
+  grid-area: nav;
+  background-color: #f2bc1b;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li:first-child {
+  display: block;
+}
+.menu li {
+  display: none;
+}
+.menu a {
+  display: block;
+  color: #6c0404;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+li a.active {
+  text-decoration: underline;
+}
+.responsive li {
+  display: block;
+}
+.hero img {
+  max-width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Annie Use Your Telescope", cursive;
+}
+main {
+  grid-area: main;
+  flex-flow: column;
+}
+li {
+  list-style-type: none;
+}
+main h2 {
+  background-color: #65498c;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+}
+.gallery {
+  display: block;
+}
+
+.gallery .gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 0.5rem;
+  align-items: start;
+}
+
+.gallery > .gallery__list > div > figure {
+  height: 100%;
+  margin: 5px;
+}
+
+.gallery > .gallery__list > div > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figcaption {
+  background-color: #96d9c6;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+  margin-top: -5px;
+}
+
+footer {
+  margin-top: 1em;
+  grid-column: footer;
+  background-color: #f2bc1b;
+  min-height: 50px;
+}
