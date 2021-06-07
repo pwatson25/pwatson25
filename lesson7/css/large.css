@@ -11,7 +11,7 @@
       ". map map contact contact ."
       "footer footer footer footer footer footer";
   }
-  figure.photo:hover {
+  picture.photo:hover {
     box-shadow: 0 0 20px #111;
     border-radius: 0 0 5px 5px;
   }
