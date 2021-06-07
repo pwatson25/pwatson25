@@ -124,14 +124,12 @@ picture.photo {
   grid-gap: 1em;
 }
 
-#gallery img[data-src] {
-  filter: blur(0.2em);
+picture img[data-src] {
+  filter: blur(5px);
 }
-
-#gallery img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-  padding: 0.5em;
+picture img {
+  filter: blur(0px);
+  transition: filter(1s);
 }
 
 figcaption {
