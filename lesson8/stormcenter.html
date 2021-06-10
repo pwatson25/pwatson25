@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+
+</head>
+<body>
+  <div class="announcement">
+      <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
+  </div>
+
+<div class="grid">
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav>
+  <ul  class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="/lesson6/preston-6.html">Preston</a></li>
+    <li><a href="#">Soda Springs</a></li>
+    <li><a href="#">Fish Haven</a></li>
+    <li><a href="#" class="active">Storm Center</a></li>
+    <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+  </ul>
+</nav>
+<main>
+<!-- multistep form -->
+<form id="weatherForm">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Contact</li>
+      <li>Storm Info</li>
+      <li>Additional Info</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+  <h2 class="fs-title">Contact Information</h2>
+          <h3 class="fs-subtitle">Tell us who you are and how we can contact you!</h3>
+          <input type="text" id="fname" placeholder="First Name" pattern="[A-Za-z-\.\s]{3,}" required>
+      <input type="text" id="lname" placeholder="Last Name" pattern="[A-Za-z-\.\s]{3,}" required>
+      <input type="text" id="email" placeholder="Email">
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="number" name="zip"  placeholder="Zip" required>
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Important Storm Information</h2>
+      <h3 class="fs-subtitle">Tell us about the storm</h3>
+      <label>Storm Date:
+      <input type="date" name="theDate"/>
+        </label>
+      <label>Storm Type:
+      <input name="storms" list="stormlist">
+      <datalist id="stormlist">
+      <option value="Flash Flood">
+      <option value="Hail">
+      <option value="Hurricane">
+      <option value="Thunderstorm">
+      <option value="Tornado">
+      </option>
+      </datalist>
+        </label>
+      <label class="storm">Storm Severity: <span id="rating-value">5</span>
+      <input type="range" name="storm-severity" min="1" max="10" step="1" value="5" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"/>
+     </label>
+  <label>
+      <select name="stormRegion" id="selectstorm" onchange="selectResponse()">
+      <option value="" disabled selected>Storm Region...</option>
+      <option value="Preston">Preston</option>
+      <option value="Soda Springs">Soda Springs</option>
+      <option value="Fish Haven">Fish Haven</option>
+      </select>
+      </label>
+      <br><br>
+      User In Danger Level <br>
+      <em>(Choose one)</em>
+      <br><br>
+      <div class="selection"><br>
+      <input type="radio" id="answer1" name="time" value="Yes" ><label for="answer1"> Yes</label>
+  
+      <input type="radio" id="answer2" name="time" value="Maybe"><label for="answer2"> Maybe</label>           
+  
+      <input type="radio" id="answer3" name="time" value="No" checked><label for="answer3">No</label>
+      </div>
+              <input type="button" name="previous" class="previous action-button" value="Previous" />
+          <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Additional Information</h2>
+      <h3 class="fs-subtitle">What else should we know?</h3>
+     <label class="top">Comments: </label><br><br>
+                  <textarea name="comments" id="comments">
+                  </textarea>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="submit" name="submit" class="submit action-button" value="Submit" />
+    </fieldset>
+  </form>
+</main>
+  <footer>
+    <div>
+    &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+ </div>
+ Last Updated: 
+ <span id="lastUpdate"></span>
+</footer>
+</div>
+<script src="javascript/stormcenter.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'Annie Use Your Telescope', 'Short Stack'
+    ]
+  }
+});
+</script>
+</body>
+</html>
