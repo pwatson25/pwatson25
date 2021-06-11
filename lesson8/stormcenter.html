@@ -36,10 +36,10 @@
 
 <main>
 <form id="weatherForm" method="get" action="thanks.html">
+  <div class="tab">
     <h2 class="title">Contact Information</h2>
     <h3 class="subtitle">Tell us who you are and how we can contact you!</h3>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">
     <p>
     <input type="text" class="required" name="firstname" id="fname" placeholder="First Name" pattern="[A-Za-z-\.\s]{3,}">
     </p>
@@ -56,9 +56,9 @@
     <input type="number" class="required" name="zip"  placeholder="Zip">
     </p>
   </div>
-  <div class="tab">Contact Info:
-<h2 class="fs-title">Important Storm Information</h2>
-      <h3 class="fs-subtitle">Tell us about the storm</h3>
+  <div class="tab">
+<h2 class="title">Important Storm Information</h2>
+      <h3 class="subtitle">Tell us about the storm</h3>
       <label>Storm Date:
       <input type="date" name="theDate"/>
         </label>
@@ -95,11 +95,11 @@
   
       <input type="radio" id="answer3" name="time" value="No" checked><label for="answer3">No</label>
       </div>
-              
+      <br><br>
   </div>
   <div class="tab">
-  <h2 class="fs-title">Additional Information</h2>
-      <h3 class="fs-subtitle">What else should we know?</h3>
+  <h2 class="title">Additional Information</h2>
+      <h3 class="subtitle">What else should we know?</h3>
      <label class="top">Comments: </label><br><br>
                   <textarea name="comments" id="comments">
                   </textarea>
@@ -112,7 +112,6 @@
   </div>
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
