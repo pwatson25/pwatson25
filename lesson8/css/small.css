@@ -108,6 +108,9 @@ main h2 {
   padding: 0.5em;
   width: 100%;
 }
+span.danger {
+  color: crimson;
+}
 footer {
   margin-top: 1em;
   grid-column: footer;
