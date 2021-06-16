@@ -73,3 +73,6 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+function adjustSeverity(rating) {
+  document.getElementById("rating-value").innerHTML = rating;
+}
