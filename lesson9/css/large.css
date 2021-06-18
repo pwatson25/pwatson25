@@ -40,7 +40,14 @@
       ". map map contact contact ."
       "footer footer footer footer footer footer";
   }
-  .hero img {
-    max-width: 100%;
+  .cards {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .cards > section {
+    flex-direction: column;
+  }
+  section > div {
+    padding: 0;
   }
 }
