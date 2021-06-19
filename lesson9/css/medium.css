@@ -14,7 +14,8 @@
       "header header header header header header"
       "nav nav nav nav nav nav"
       ". main main main main ."
-      ". map map contact contact ."
+      ". article article article article ."
+      ". . contact contact . ."
       "footer footer footer footer footer footer";
   }
   .menu {
@@ -46,5 +47,13 @@
   section:nth-child(even) {
     display: flex;
     flex-direction: row;
+  }
+  .article_image {
+    display: block;
+  }
+  .article_image img {
+    width: 45%;
+    margin: 1% 0 2% 1%;
+    float: right;
   }
 }

@@ -34,7 +34,7 @@ body {
     "header header"
     "nav nav"
     "main main"
-    "map map"
+    "article article"
     "contact contact"
     "footer footer";
 }
@@ -102,7 +102,7 @@ main {
   flex-flow: column;
 }
 
-main h2 {
+h2 {
   background-color: #65498c;
   color: whitesmoke;
   border-radius: 5px;
@@ -115,10 +115,9 @@ section {
   align-items: center;
   justify-content: center;
   width: -webkit-fill-available;
-  border: 1px solid #4d4d96;
-  border-radius: 5px;
+  border: 5px solid #65498c;
+  border-radius: 10px;
   padding: 0.5rem;
-  background-color: #c2eeff3a;
 }
 section > * {
   width: -webkit-fill-available;
@@ -128,7 +127,7 @@ section p {
 }
 section > img {
   width: 250px;
-  height: 250px;
+  height: 200px;
   box-shadow: 0 0 10px #333;
   margin-top: 0.75em;
 }
@@ -136,12 +135,63 @@ section > img {
 .cards {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  background-color: whitesmoke;
   border-radius: 5px;
-  box-shadow: 0 0 30px #777777;
   padding: 0.75rem;
 }
-
+.article {
+  grid-area: article;
+  flex-flow: column;
+  display: block;
+}
+.article_image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.article_image img {
+  width: 95%;
+}
+.contact {
+  grid-area: contact;
+  background-color: #27b9f2;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 5px;
+  flex-flow: column;
+}
+.contact > * {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+.phone {
+  color: #7e0202;
+  margin-right: 5px;
+}
+.contact h3 {
+  font-size: 1.5em;
+}
+#name {
+  font-size: 2em;
+}
+.contact img {
+  width: 2.5em;
+  padding-right: 1em;
+}
+.social_share {
+  flex-flow: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social_share img {
+  width: 3em;
+  padding: 0.5em;
+}
+.social_share img:hover {
+  cursor: pointer;
+}
 footer {
   margin-top: 1em;
   grid-column: footer;
