@@ -138,6 +138,18 @@ section > img {
   border-radius: 5px;
   padding: 0.75rem;
 }
+button {
+  background-color: #f2bc1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  border: 0 none;
+  border-radius: 5px;
+}
 .article {
   grid-area: article;
   flex-flow: column;
