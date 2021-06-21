@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Short Stack", Helvetica, cursive;
+}
+.announcement {
+  display: none;
+  background-color: #f21313;
+  border: 2px solid#F21313;
+  border-radius: 5px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 12px;
+  right: 0%;
+  font-size: 2em;
+  padding: 8px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  background: #bbb;
+  border-radius: 5px;
+}
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "map map"
+    "contact contact"
+    "footer footer";
+}
+
+.grid > * {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  grid-area: header;
+  background-color: #27b9f2;
+}
+header > img {
+  float: left;
+  width: 6rem;
+  padding: 0.75em;
+}
+nav {
+  grid-area: nav;
+  background-color: #f2bc1b;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li:first-child {
+  display: block;
+}
+.menu li {
+  display: none;
+}
+.menu a {
+  display: block;
+  color: #6c0404;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+li a.active {
+  text-decoration: underline;
+}
+.responsive li {
+  display: block;
+}
+.hero img {
+  max-width: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Annie Use Your Telescope", cursive;
+}
+main {
+  grid-area: main;
+  flex-flow: column;
+}
+main h2 {
+  background-color: #65498c;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+}
+.current_weather p {
+  padding-left: 1em;
+}
+
+.forecast > img {
+  padding: 10px;
+}
+.responsive-table {
+  display: block;
+}
+
+[class^="day-section"] {
+  margin-bottom: 1rem;
+}
+
+.forecast-day,
+.forecast-icon,
+.data {
+  padding: 1rem;
+  border: 1px solid #333;
+  margin: -1px 0 0 -1px;
+  box-sizing: border-box;
+  background: linear-gradient(#eee, #96d9c6);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.forecast-icon img {
+  width: 5em;
+}
+.forecast-max {
+  font-size: 1.3em;
+}
+.forecast-min {
+  margin-top: 8px;
+}
+p.forecast:hover {
+  background: #c8f1c5;
+}
+
+.forecast-day {
+  background: #65498c;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .responsive-table {
+    display: flex;
+  }
+  [class^="day-section"] {
+    flex-grow: 1;
+  }
+}
+
+.article_image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.article_image img {
+  width: 95%;
+}
+/*.article_content {
+  border: 2px solid #27b9f2;
+  padding: 0.75em;
+}
+*/
+
+.map {
+  grid-area: map;
+  background-color: #27b9f2;
+  margin-right: 1em;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 20em;
+  width: 500px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 20em;
+  width: 500px;
+}
+iframe {
+  width: 500px;
+  height: 20em;
+}
+.contact {
+  grid-area: contact;
+  background-color: #27b9f2;
+  flex-flow: column;
+  max-height: 20em;
+}
+.contact > * {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+.phone {
+  color: #7e0202;
+  margin-right: 5px;
+}
+.contact h3 {
+  font-size: 1.5em;
+}
+.contact img {
+  width: 2.5em;
+  padding-right: 1em;
+}
+.social_share {
+  flex-flow: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social_share img {
+  width: 3em;
+  padding: 0.5em;
+}
+.social_share img:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 1em;
+  grid-column: footer;
+  background-color: #f2bc1b;
+  min-height: 50px;
+}

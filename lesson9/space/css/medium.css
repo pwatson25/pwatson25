@@ -1,0 +1,44 @@
+@media only screen and (min-width: 592px) {
+  .current_weather {
+    position: relative;
+    line-height: 1em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 468px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      ". main main main main ."
+      ". map map contact contact ."
+      "footer footer footer footer footer footer";
+  }
+  .menu {
+    display: flex;
+  }
+  .menu li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .menu a {
+    text-align: center;
+  }
+  .menu li:first-child {
+    display: none;
+  }
+  .forecast {
+    flex-direction: row;
+  }
+  .article_image {
+    display: block;
+  }
+  .article_image img {
+    width: 45%;
+    margin: 1% 0 2% 1%;
+    float: right;
+  }
+}
