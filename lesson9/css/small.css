@@ -210,3 +210,6 @@ footer {
   background-color: #f2bc1b;
   min-height: 50px;
 }
+footer > * {
+  padding: 0.75em;
+}
