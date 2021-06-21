@@ -16,13 +16,16 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=kJMweCft7Sek5sPPm4bQ68PqvHPZA
     
     });
 
-fetch('http://api.nytimes.com/svc/semantic/v2/svc/events/v2/listings.json?ll=40.756173,-73.990173&radius=1000&sort=dist+asc')
-.then((response) => response.json())
-.then((jsObject) => {
-    console.log(jsObject);
+    
+    
+    
+// fetch('https://api.le-systeme-solaire.net/rest')
+// .then((response) => response.json())
+// .then((jsObject) => {
+//     console.log(jsObject);
 
 
-});
+// });
 
   // const req = "https://api.nasa.gov/planetary/apod?api_key=kJMweCft7Sek5sPPm4bQ68PqvHPZACO8gMoKXTJu";
 
