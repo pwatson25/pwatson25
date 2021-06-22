@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("../images/bg_climatekids.png");
+}
+
+#weatherForm {
+  min-width: 300px;
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  display: block;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+}
+#weatherForm input,
+#weatherForm textarea {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-weight: normal;
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #f2bc1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  border: 0 none;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #f2bc1b;
+}
+.selection {
+  display: flex;
+  margin-right: 2.5rem;
+}
+#rating-value {
+  font-weight: bold;
+}
