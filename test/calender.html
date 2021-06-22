@@ -1,0 +1,128 @@
+
+<html lang="en-us">
+    <!DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Calendar</title>
+      <meta name="description" content="Calendar">
+      <meta name="author" content="Charles Anderson">
+      <link rel="stylesheet" href="css/calender.css">
+      <link rel="stylesheet" href="./css/small.css">
+      <link rel="stylesheet" href="./css/medium.css">
+      <link rel="stylesheet" href="./css/large.css">
+    
+    </head>
+
+
+<body>
+  <div class="announcement">
+      <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
+  </div>
+
+<div class="grid">
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav>
+  <ul class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="/lesson6/preston-6.html">Preston</a></li>
+    <li><a href="#">Soda Springs</a></li>
+    <li><a href="#">Fish Haven</a></li>
+    <li><a href="#" class="active">Storm Center</a></li>
+    <li><a href="/lesson7/">Gallery</a></li>
+  </ul>
+</nav>
+    <main>
+      <div class="content">
+        <div class="calendar-container">
+          <div class="calendar"> 
+            <div class="year-header"> 
+              <span class="left-button" id="prev"> &lang; </span> 
+              <span class="year" id="label"></span> 
+              <span class="right-button" id="next"> &rang; </span>
+            </div> 
+            <table class="months-table"> 
+              <tbody>
+                <tr class="months-row">
+                  <td class="month">Jan</td> 
+                  <td class="month">Feb</td> 
+                  <td class="month">Mar</td> 
+                  <td class="month">Apr</td> 
+                  <td class="month">May</td> 
+                  <td class="month">Jun</td> 
+                  <td class="month">Jul</td>
+                  <td class="month">Aug</td> 
+                  <td class="month">Sep</td> 
+                  <td class="month">Oct</td>          
+                  <td class="month">Nov</td>
+                  <td class="month">Dec</td>
+                </tr>
+              </tbody>
+            </table> 
+            
+            <table class="days-table"> 
+              <td class="day">Sun</td> 
+              <td class="day">Mon</td> 
+              <td class="day">Tue</td> 
+              <td class="day">Wed</td> 
+              <td class="day">Thu</td> 
+              <td class="day">Fri</td> 
+              <td class="day">Sat</td>
+            </table> 
+            <div class="frame"> 
+              <table class="dates-table"> 
+                  <tbody class="tbody">             
+                  </tbody> 
+              </table>
+            </div> 
+            <button class="button" id="add-button">Add Event or Task</button>
+          </div>
+        </div>
+        <div class="events-container">
+        </div>
+        <div class="dialog" id="dialog">
+            <h2 class="dialog-header"> Add New Event </h2>
+            <form class="form" id="form">
+              <div class="form-container">
+                <label class="form-label" id="valueFromMyButton" for="name">Event or Task name</label>
+                <input class="input" type="text" id="name" maxlength="36">
+                <label class="form-label" id="valueFromMyButton" for="count">Number of people to invite</label>
+                <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+                <input type="button" value="Cancel" class="button" id="cancel-button">
+                <input type="button" value="OK" class="button" id="ok-button">
+              </div>
+            </form>
+          </div>
+      </div>
+      </main>
+      <footer>
+        <div>
+        &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+     </div>
+     Last Updated: 
+     <span id="lastUpdate"></span>
+    </footer>
+      </div>
+      <!-- Dialog Box-->
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+      </script>
+      <script src="js/calender.js"></script>
+      <script src="js/javascript.js"></script>
+      <script>
+        WebFont.load({
+        google: {
+          families: [
+              'Annie Use Your Telescope', 'Short Stack'
+          ]
+        }
+      });
+      </script>
+    </body>
+    </html>
