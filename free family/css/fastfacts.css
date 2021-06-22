@@ -67,16 +67,6 @@ section img {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
-footer {
-  text-align: center;
-  font-family: "Annie Use Your Telescope", cursive;
-  background-color: #65498c;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: 0.5em;
-  margin-top: 1em;
-  width: 100%;
-}
 
 /* medium viewports */
 @media (min-width: 520px) {

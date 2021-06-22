@@ -1,23 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
-    <title>Prophets Page</title>
-    <meta name="description" content ="JSON data source activity" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
     <link rel="stylesheet" href="../css/fastfacts.css"/>
-    
+
+
 </head>
+<body>
+  <div class="announcement">
+      <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
+  </div>
 
+<div class="grid">
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav>
+  <ul  class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="./meridian/meridian.html">Meridian</a></li>
+    <li><a href="#">Provo</a></li>
+    <li><a href="#">Clarksville</a></li>
+    <li><a href="../stormcenter.html">Storm Center</a></li>
+    <li><a href="./meridian/nasa.html" class="active">NASA Gallery</a></li>
+    <li><a href="./calender.html">Calendar</a></li>
 
-    <h2>Cool Facts with NASA</h2>
+  </ul>
+</nav>
+
   <main>
+    <h2>Cool Facts with NASA</h2>
+
     <div class="cards">
     </div>
   </main>
   <footer>
-    Peter Watson | BYU-Idaho | WDD 230
-  </footer>
+    <div>
+    &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+ </div>
+ Last Updated: 
+ <span id="lastUpdate"></span>
+</footer>
+  </div>
+  <script src="js/javascript.js"></script>
   <script src="../js/nasafacts.js"></script>
 </body>
   </html>
