@@ -1,5 +1,5 @@
   
-fetch('https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&lon=-116.3915&exclude=hourly&units=imperial&APPID=98cbc04c44e9fc2905a70710f2643e4e')
+fetch('https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&lon=-116.3915&exclude=hourly,minutely&units=imperial&APPID=98cbc04c44e9fc2905a70710f2643e4e')
 .then((response) => response.json())
 .then((jsObject) => {
     console.log(jsObject);
@@ -14,39 +14,37 @@ fetch('https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&lon=-116.3915
     document.getElementById('temp-current').textContent = Math.round(temp);
 
         
-    //     var weekday = new Array(7);
-    //     weekday[0] = "Sun";
-    //     weekday[1] = "Mon";
-    //     weekday[2] = "Tue";
-    //     weekday[3] = "Wed";
-    //     weekday[4] = "Thu";
-    //     weekday[5] = "Fri";
-    //     weekday[6] = "Sat";
+        var weekday = new Array(7);
+        weekday[0] = "Sun";
+        weekday[1] = "Mon";
+        weekday[2] = "Tue";
+        weekday[3] = "Wed";
+        weekday[4] = "Thu";
+        weekday[5] = "Fri";
+        weekday[6] = "Sat";
 
-    //     var dayOfWeek = document.getElementsByClassName("forecast-day");
-    //     var weatherIcon = document.getElementsByClassName("weatherIcon");
-    //     var tempMax = document.getElementsByClassName("forecast-max");
-    //     var tempMin = document.getElementsByClassName("forecast-min");
+        var data = jsObject.daily;
+        var dayOfWeek = document.getElementsByClassName("forecast-day");
+        var weatherIcon = document.getElementsByClassName("weatherIcon");
+        var tempMax = document.getElementsByClassName("forecast-max");
+        var tempMin = document.getElementsByClassName("forecast-min");
 
-    //     for (var i = 0; i < data.length; i++) {
-    //         var d = new Date(data[i].dt_txt);
-    //         dayOfWeek[i].textContent = weekday[d.getDay()];
+        for (var i = 0; i < data.length; i++) {
+            var d = new Date(data[i]);
+            dayOfWeek[i].textContent = weekday[d.getDay()];
 
-    //         const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
-    //         const description = data[i].weather[0].description;
-    //         weatherIcon[i].setAttribute('src', imagesrc);
-    //         weatherIcon[i].setAttribute('alt', description);
+            const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[i].icon + '.png';
+            const description = data[i].weather[i].description;
+            weatherIcon[i].setAttribute('src', imagesrc);
+            weatherIcon[i].setAttribute('alt', description);
 
-    //         tempMax[i].innerHTML = Math.round(data[i].main.temp_max) + " &#176;F";
-    //     }
-        
-    //     for (var j = 0; j < data.length; j++) {
-    //         var day = new Date(data[j].dt_txt);
-    //         dayOfWeek[j].textContent = weekday[day.getDay()];
+            tempMax[i].innerHTML = Math.round(data[i].temp.max) + " &#176;F";
+            tempMin[i].innerHTML = Math.round(data[i].temp.min) + " &#176;F";
 
-    //         tempMin[j].innerHTML = Math.round(data[j].main.temp_min) + " &#176;F";
-    //     }
+        }
 
-     });
+    });
+
+
 
 
