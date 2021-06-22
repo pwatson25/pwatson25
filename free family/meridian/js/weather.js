@@ -30,11 +30,11 @@ fetch('https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&lon=-116.3915
         var tempMin = document.getElementsByClassName("forecast-min");
 
         for (var i = 0; i < data.length; i++) {
-            var d = new Date(data[i]);
+            var d = new Date(data[i].dt);
             dayOfWeek[i].textContent = weekday[d.getDay()];
-
-            const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[i].icon + '.png';
-            const description = data[i].weather[i].description;
+            const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
+            const description = data[i].weather[0].description;
+            
             weatherIcon[i].setAttribute('src', imagesrc);
             weatherIcon[i].setAttribute('alt', description);
 
