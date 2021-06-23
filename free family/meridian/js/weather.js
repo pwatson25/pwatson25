@@ -31,7 +31,7 @@ fetch('https://api.openweathermap.org/data/2.5/onecall?lat=43.6121&lon=-116.3915
 
         for (var i = 0; i < data.length; i++) {
             var d = new Date(data[i].dt);
-            dayOfWeek[i].textContent = weekday[d.getDay()];
+            dayOfWeek[i].textContent = weekday[d.getDay()+i];
             const imagesrc = 'https://openweathermap.org/img/w/' + data[i].weather[0].icon + '.png';
             const description = data[i].weather[0].description;
             
