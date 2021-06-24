@@ -68,6 +68,7 @@ section img {
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
+
 /* medium viewports */
 @media (min-width: 520px) {
   .cards {
