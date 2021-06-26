@@ -97,6 +97,15 @@ h5,
 h6 {
   font-family: "Annie Use Your Telescope", cursive;
 }
+.h1_section {
+  font-size: 2rem;
+  text-align: center;
+}
+#news {
+  font-size: 1.65rem;
+  text-align: center;
+  margin-top: -10px;
+}
 main {
   grid-area: main;
   flex-flow: column;
@@ -131,7 +140,15 @@ section > img {
   box-shadow: 0 0 10px #333;
   margin-top: 0.75em;
 }
-
+.articles section {
+  margin-top: 0.75em;
+}
+.articles > section {
+  margin-bottom: 1.2em;
+}
+.articles > section > img {
+  margin: 0.75em;
+}
 .cards {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

@@ -51,4 +51,7 @@
   section > div {
     padding: 0;
   }
+  .articles > section > div > button {
+    width: 200px;
+  }
 }
