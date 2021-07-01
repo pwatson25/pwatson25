@@ -53,15 +53,9 @@ const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=558
             weatherIcon[i].setAttribute('alt', description);
 
             tempMax[i].innerHTML = Math.round(data[i].main.temp_max) + " &#176;F";
-        }
-        
-        for (var j = 0; j < data.length; j++) {
-            var day = new Date(data[j].dt_txt);
-            dayOfWeek[j].textContent = weekday[day.getDay()];
+            tempMin[i].innerHTML = Math.round(data[i].main.temp_min) + " &#176;F";
 
-            tempMin[j].innerHTML = Math.round(data[j].main.temp_min) + " &#176;F";
         }
-
     });
 
 
