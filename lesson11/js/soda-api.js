@@ -2,15 +2,11 @@
 fetch('https://api.openweathermap.org/data/2.5/weather?&id=5607916&units=imperial&APPID=98cbc04c44e9fc2905a70710f2643e4e')
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
-
+    
     let temp = jsObject.main.temp;
-    let minTemp = jsObject.main.temp_min;
-    let maxTemp = jsObject.main.temp_max;
     let windspeed = jsObject.wind.speed;
 
-    document.getElementById('temp-min').textContent = Math.round(minTemp);
-    document.getElementById('temp-max').textContent = Math.round(maxTemp);
+    document.getElementById('current_temp').textContent = Math.round(temp);
     document.getElementById('condition').textContent = jsObject.weather[0].main;
     document.getElementById('wind-speed').textContent = Math.round(windspeed);
 
