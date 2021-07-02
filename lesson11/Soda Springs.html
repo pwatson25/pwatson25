@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./css/collapsible.css">
 
 </head>
 <body>
@@ -93,12 +94,30 @@
             </div>
         
             <p style="clear:right"></p>
-            <div class="article">
-              <h3 id="fact"></h2>
+            <!-- <div class="article">
+              <h3 id="panda"></h2>
                 <picture class="article_image">
                   <img src="" alt="" id="photo">
                 </picture>
               </div>
+               -->
+<h2>Animal Facts</h2>
+<button type="button" class="collapsible">Panda Fact</button>
+<div class="content">
+  <p id="panda"></p>
+  <img src="" alt="" id="pandaPhoto">
+</div>
+<button type="button" class="collapsible">Racoon Fact</button>
+<div class="content">
+  <p id="racoon"></p>
+  <img src="" alt="" id="racoonPhoto">
+</div>
+<button type="button" class="collapsible">Kangaroo</button>
+<div class="content">
+  <p id="kangaroo"></p>
+</div>
+<br><br>
+
   </main>
 
   <div class="map">
@@ -130,6 +149,7 @@
 <script src="js/javascript.js"></script>
 <script src="js/soda-api.js"></script>
 <script src="js/test.js"></script>
+<script src="js/collapsible.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
@@ -140,5 +160,6 @@
   }
 });
 </script>
+
 </body>
 </html>
