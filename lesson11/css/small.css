@@ -34,6 +34,7 @@ body {
     "header header"
     "nav nav"
     "main main"
+    "article article"
     "map map"
     "contact contact"
     "footer footer";
@@ -101,6 +102,7 @@ main {
   grid-area: main;
   flex-flow: column;
 }
+
 main h2 {
   background-color: #65498c;
   color: whitesmoke;
@@ -173,7 +175,11 @@ p.forecast:hover {
 .article_image img {
   width: 95%;
 }
-
+.article {
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+}
 .map {
   grid-area: map;
   background-color: #27b9f2;

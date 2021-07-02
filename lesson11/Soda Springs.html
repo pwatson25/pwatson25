@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
     <link rel="stylesheet" href="./css/collapsible.css">
+    <script src="js/animalfacts.js"></script>
+
 
 </head>
 <body>
@@ -94,31 +96,43 @@
             </div>
         
             <p style="clear:right"></p>
-            <!-- <div class="article">
-              <h3 id="panda"></h2>
-                <picture class="article_image">
-                  <img src="" alt="" id="photo">
-                </picture>
-              </div>
-               -->
-<h2>Animal Facts</h2>
-<button type="button" class="collapsible">Panda Fact</button>
-<div class="content">
-  <p id="panda"></p>
-  <img src="" alt="" id="pandaPhoto">
-</div>
-<button type="button" class="collapsible">Racoon Fact</button>
-<div class="content">
-  <p id="racoon"></p>
-  <img src="" alt="" id="racoonPhoto">
-</div>
-<button type="button" class="collapsible">Kangaroo</button>
-<div class="content">
-  <p id="kangaroo"></p>
-</div>
-<br><br>
 
   </main>
+  <div class="article">
+      <h2>Animal Facts of the Day</h2>
+<button class="accordion">Panda Fact</button>
+<div class="panel">
+<p id="panda"></p>
+<img src="" alt="" id="pandaPhoto">
+</div>
+
+<button class="accordion">Racoon Fact</button>
+<div class="panel">
+<p id="racoon"></p>
+<img src="" alt="" id="racoonPhoto">
+</div>
+
+<button class="accordion">Kangaroo Fact</button>
+<div class="panel">
+<p id="kangaroo"></p>
+<img src="" alt="" id="kangarooPhoto">
+</div>
+
+<button class="accordion">Koala Fact</button>
+<div class="panel">
+<p id="koala"></p>
+<img src="" alt="" id="koalaPhoto">
+</div>
+
+<button class="accordion">Fox Fact</button>
+<div class="panel">
+<p id="fox"></p>
+<img src="" alt="" id="foxPhoto">
+</div>
+
+<br><br>
+  </div>
+
 
   <div class="map">
     <div class="mapouter">
@@ -148,8 +162,6 @@
 </div>
 <script src="js/javascript.js"></script>
 <script src="js/soda-api.js"></script>
-<script src="js/test.js"></script>
-<script src="js/collapsible.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
@@ -160,6 +172,22 @@
   }
 });
 </script>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
 
 </body>
 </html>
