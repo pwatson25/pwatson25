@@ -5,17 +5,22 @@ body {
   font-family: "Short Stack", Helvetica, cursive;
 }
 .announcement {
+  grid-area: announcement;
   display: none;
   background-color: #f21313;
-  border: 2px solid#F21313;
+  border: 0px solid#F21313;
   border-radius: 5px;
 }
-
+#announcement {
+  background-color: transparent !important;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: none;
+}
 .close {
   cursor: pointer;
   position: absolute;
   margin-top: 12px;
-  right: 0%;
   font-size: 2em;
   padding: 8px 16px;
   transform: translate(0%, -50%);
@@ -31,6 +36,7 @@ body {
   display: grid;
 
   grid-template-areas:
+    "announcement announcement"
     "header header"
     "nav nav"
     "main main"
@@ -117,6 +123,9 @@ main h2 {
 .forecast > img {
   padding: 10px;
 }
+.forecast {
+  width: -webkit-fill-available;
+}
 .responsive-table {
   display: block;
 }
@@ -177,7 +186,7 @@ p.forecast:hover {
 }
 .article {
   grid-area: article;
-  display: flex;
+  display: block;
   flex-direction: column;
 }
 .map {

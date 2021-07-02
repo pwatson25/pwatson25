@@ -9,21 +9,23 @@ h2 {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  background-color: #f2bc1b;
+  color: white;
   border: none;
+  padding: 10px 20px;
+  margin-bottom: 0.75em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: -webkit-fill-available;
   text-align: left;
-  outline: none;
   font-size: 15px;
   transition: 0.4s;
 }
 
-.active,
+.accordion .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: rgb(114, 114, 114);
 }
 
 .accordion:after {
@@ -34,7 +36,7 @@ h2 {
   margin-left: 5px;
 }
 
-.active:after {
+.accordion .active:after {
   content: "\2212";
 }
 

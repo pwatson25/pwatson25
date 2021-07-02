@@ -1,7 +1,6 @@
 fetch('https://some-random-api.ml/animal/panda')
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
     
         let panda = jsObject.fact;
     
@@ -15,7 +14,6 @@ fetch('https://some-random-api.ml/animal/panda')
 fetch('https://some-random-api.ml/animal/racoon')
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
     
         let racoon = jsObject.fact;
     
@@ -29,7 +27,6 @@ fetch('https://some-random-api.ml/animal/racoon')
     fetch('https://some-random-api.ml/animal/kangaroo')
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
     
         let kangaroo = jsObject.fact;
     
@@ -43,7 +40,6 @@ fetch('https://some-random-api.ml/animal/racoon')
     fetch('https://some-random-api.ml/animal/koala')
 .then((response) => response.json())
 .then((jsObject) => {
-    console.log(jsObject);
     
         let koala = jsObject.fact;
     
@@ -57,7 +53,6 @@ fetch('https://some-random-api.ml/animal/racoon')
     fetch('https://some-random-api.ml/animal/fox')
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         
             let fox = jsObject.fact;
         

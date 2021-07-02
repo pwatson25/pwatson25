@@ -5,12 +5,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?&id=5585010&units=imperia
     console.log(jsObject);
 
     let temp = jsObject.main.temp;
-    let minTemp = jsObject.main.temp_min;
-    let maxTemp = jsObject.main.temp_max;
     let windspeed = jsObject.wind.speed;
 
-    document.getElementById('temp-min').textContent = Math.round(minTemp);
-    document.getElementById('temp-max').textContent = Math.round(maxTemp);
+    document.getElementById('current_temp').textContent = Math.round(temp);
     document.getElementById('condition').textContent = jsObject.weather[0].main;
     document.getElementById('wind-speed').textContent = Math.round(windspeed);
 
@@ -19,6 +16,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?&id=5585010&units=imperia
         output = Math.round(35.74 + 0.6215 * temp - 35.75 * windspeed ** 0.16 + 0.4275 * temp * windspeed ** 0.16);
         output += " \xB0F";
     }
+
 
     document.getElementById("wind-chill").textContent = output;
 });

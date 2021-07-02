@@ -1,7 +1,7 @@
 @media only screen and (min-width: 969px) {
   .current_weather {
     position: absolute;
-    top: 15rem;
+    top: 19rem;
     left: 23rem;
     background: radial-gradient(#eee, #4567aa);
     width: 16em;
@@ -17,8 +17,8 @@
   .weather_content {
     transform: rotate(-45deg);
     position: absolute;
-    left: 2em;
-    top: 0.85em;
+    left: 2.8em;
+    top: 0.75em;
     font-weight: bold;
   }
   .weather_content h2 {
@@ -34,6 +34,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
       "header header header header header header"
       "nav nav nav nav nav nav"
       ". main main main main ."

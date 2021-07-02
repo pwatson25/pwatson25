@@ -11,6 +11,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
       "header header header header header header"
       "nav nav nav nav nav nav"
       ". main main main main ."

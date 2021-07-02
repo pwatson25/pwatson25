@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soda Springs | Peter J Watson | WDD230</title>
     <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="./css/collapsible.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
-    <link rel="stylesheet" href="./css/collapsible.css">
     <script src="js/animalfacts.js"></script>
 
 
 </head>
 <body>
+  <div class="grid">
   <div class="announcement">
-      <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
+      <h2 id="announcement">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
   </div>
 
-<div class="grid">
   <header>
       <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
       <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
@@ -44,8 +44,7 @@
             <div class="weather_content">
             <h2><span>Current Weather</span></h2>
             <p>Currently: <span id="condition"></span><span></span></p>
-            <p>High: <span id="temp-max"></span><span>&deg; F</span></p>
-            <p>Low: <span id="temp-min"></span><span>&deg; F</span></p>
+            <p>Current Temp: <span id="current_temp"></span><span>&deg; F</span></p>
             <p>Wind Speed: <span id="wind-speed"></span>MPH</p>
             <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
