@@ -31,6 +31,7 @@ body {
   display: grid;
 
   grid-template-areas:
+    "announcement announcement"
     "header header"
     "nav nav"
     "main main"
@@ -44,6 +45,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.announcement {
+  grid-area: announcement;
 }
 header {
   grid-area: header;

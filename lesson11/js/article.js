@@ -1,4 +1,4 @@
-fetch('https://api.nasa.gov/planetary/apod?api_key=kJMweCft7Sek5sPPm4bQ68PqvHPZACO8gMoKXTJu')
+fetch('https://ll.thespacedevs.com/2.0.0/event/upcoming/?limit=1')
 .then((response) => response.json())
 .then((jsObject) => {
     console.log(jsObject);

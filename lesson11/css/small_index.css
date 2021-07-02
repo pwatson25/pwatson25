@@ -4,6 +4,7 @@
   display: grid;
 
   grid-template-areas:
+    "announcement announcement"
     "header header"
     "nav nav"
     "main main"
@@ -34,25 +35,25 @@ section > img {
   box-shadow: 0 0 10px #333;
   margin-top: 0.75em;
 }
-
+.visit {
+  width: 100px;
+}
+.articles section {
+  margin-top: 0.75em;
+}
+.articles > section {
+  margin-bottom: 1.2em;
+}
+.articles > section > img {
+  margin: 0.75em;
+}
 .cards {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   border-radius: 5px;
   padding: 0.75rem;
 }
-button {
-  background-color: #f2bc1b;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100px;
-  border: 0 none;
-  border-radius: 5px;
-}
+
 h2 {
   background-color: #65498c;
   color: whitesmoke;
@@ -61,15 +62,18 @@ h2 {
   width: 100%;
 }
 #announcement {
-  background-color: transparent !important;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: none;
+  background-color: transparent;
+  color: black;
 }
+
 .article {
   grid-area: article;
   flex-flow: column;
   display: block;
+}
+#h1_article,
+#daily {
+  text-align: center;
 }
 .article_image {
   display: flex;

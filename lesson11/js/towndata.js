@@ -31,6 +31,7 @@ fetch(requestURL)
         button.innerHTML = "Visit...";
         button.setAttribute('onclick', `location.href='${towns.name}.html'`);
         button.setAttribute('type', 'button');
+        button.setAttribute('class', 'visit');
 
 
         div.appendChild(h2);

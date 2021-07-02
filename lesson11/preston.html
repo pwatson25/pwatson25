@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <title>Preston | Peter J Watson | WDD 230</title>
     <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/small.css">
@@ -12,11 +12,11 @@
 
 </head>
 <body>
+  <div class="grid">
   <div class="announcement">
-      <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
+    <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion. 🥞🥞🥞<span class="close">&times;</span></h2>
   </div>
 
-<div class="grid">
   <header>
       <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
       <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
@@ -35,14 +35,13 @@
   <main>
       <div class="hero">
           <picture class="hero_image">
-            <img src="/lesson10/images/weather_background_2.svg" alt="hero image">
+            <img src="./images/weather_background_2.svg" alt="hero image">
           </picture>
           <div class="current_weather">
             <div class="weather_content">
             <h2><span>Current Weather</span></h2>
             <p>Currently: <span id="condition"></span><span></span></p>
-            <p>High: <span id="temp-max"></span><span>&deg; F</span></p>
-            <p>Low: <span id="temp-min"></span><span>&deg; F</span></p>
+            <p>Current Temp: <span id="current_temp"></span><span>&deg; F</span></p>
             <p>Wind Speed: <span id="wind-speed"></span>MPH</p>
             <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
@@ -93,14 +92,15 @@
             </div>
         
             <p style="clear:right"></p>
-            <div class="article">
-              <h2 id="title"></h2>
-                <picture class="article_image">
-                  <img src="" alt="" id="photo">
-                </picture>
-                <p id="explanation"></p>
-              </div>
   </main>
+
+  <div class="article">
+    <h2 id="title"></h2>
+      <picture class="article_image">
+        <img src="" alt="" id="photo">
+      </picture>
+      <p id="explanation"></p>
+    </div>
 
   <div class="map">
     <div class="mapouter">
@@ -122,16 +122,15 @@
 
   <footer>
     <div>
-    &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
- </div>
- Last Updated: 
- <span id="lastUpdate"></span>
-</footer>
+      &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+    </div>
+    Last Updated: 
+    <span id="lastUpdate"></span>
+  </footer>
 </div>
 <script src="js/javascript.js"></script>
 <script src="js/preston-api.js"></script>
 <script src="js/article.js"></script>
-<script src="js/test.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({

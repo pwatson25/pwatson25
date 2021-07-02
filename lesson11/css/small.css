@@ -11,15 +11,10 @@ body {
   border: 0px solid#F21313;
   border-radius: 5px;
 }
-#announcement {
-  background-color: transparent !important;
-  color: whitesmoke;
-  border-radius: 5px;
-  padding: none;
-}
 .close {
   cursor: pointer;
   position: absolute;
+  color: whitesmoke;
   margin-top: 12px;
   font-size: 2em;
   padding: 8px 16px;
@@ -27,8 +22,7 @@ body {
 }
 
 .close:hover {
-  background: #bbb;
-  border-radius: 5px;
+  font-size: 2.5em;
 }
 .grid {
   max-width: 100%;
@@ -109,7 +103,8 @@ main {
   flex-flow: column;
 }
 
-main h2 {
+main h2,
+.article h2 {
   background-color: #65498c;
   color: whitesmoke;
   border-radius: 5px;
@@ -188,6 +183,18 @@ p.forecast:hover {
   grid-area: article;
   display: block;
   flex-direction: column;
+}
+button {
+  background-color: #f2bc1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  border: 0 none;
+  border-radius: 5px;
 }
 .map {
   grid-area: map;
