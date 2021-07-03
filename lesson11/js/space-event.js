@@ -14,6 +14,7 @@ fetch('https://lldev.thespacedevs.com/2.0.0/event/upcoming/?limit=1')
         const desc = jsObject.title;
         document.getElementById('photo').setAttribute('src', imagesrc);
         document.getElementById('photo').setAttribute('alt', desc);
+        document.getElementById('photo').setAttribute('loading', 'lazy');
 
         document.getElementById('watch').setAttribute('onclick', `location.href='${vidurl}'`)
     
