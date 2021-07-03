@@ -44,7 +44,7 @@ fetch(requestURL)
          
         let img = document.createElement('img');
 
-        img.setAttribute('src', `images/${towns.photo}`);
+        img.setAttribute('src', `https://storage.googleapis.com/pwatson25_photos/${towns.photo}`);
         img.setAttribute('alt', `${towns.name}`);
         img.setAttribute('loading', 'lazy');
 
