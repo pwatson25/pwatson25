@@ -1,0 +1,110 @@
+{
+  "buisness": [
+    {
+      "companyName": "Auntea Boba",
+      "address": {
+		  "streetAddress": "9448 Lanham Severn Road",
+		  "city": "Lanham",
+		  "state": "MD",
+		  "zipCode": "20706"
+	  },
+      "phoneNumber": "301-577-1322",
+	  "hours": {
+		"sun-thu": "11AM - 8PM",
+		"fri-sat": "11AM - 9PM"
+	  },
+      "url": "https://www.aunteaboba.com/lanham"
+    },
+    {
+      "companyName": "National Capital Radio and Televison Museum",
+      "address": {
+			"streetAddress": "2608 Mitchellville Rd",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20716"
+	  },
+      "phoneNumber": "301-390-1020",
+	  "hours": {
+		"fri": "9AM - 4PM",
+		"sat-sun": "12PM - 4PM"
+	  },
+      "url": "https://ncrtv.org/"
+    },
+    {
+      "companyName": "Sky Zone Trampoline Park",
+      "address": {
+			"streetAddress": "1300 Crain Hwy",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20716"
+	  },
+      "phoneNumber": "301-683-7997",
+	  "hours": {
+		"sun-fri": "12PM - 8PM",
+		"sat": "11AM - 10PM"
+	  },
+      "url": "https://www.skyzone.com/bowie"
+    },
+    {
+      "companyName": "Belair Stable Museum",
+      "address": { 
+			"streetAddress": "2835 Belair Dr",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20715"
+	  },
+      "phoneNumber": "301-809-3089",
+	  "hours": {
+		"sun-fri": "12PM - 4PM"
+	  },
+      "url": "https://www.cityofbowie.org/289/Belair-Stable-Museum"
+    },
+    {
+      "companyName": "Patuxent Nursery",
+      "address": {
+			"streetAddress": "2410 N Crain Highway",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20716"
+	  },
+      "phoneNumber": "301-218-4769",
+	  "hours": {
+		"mon-fri": "7AM - 5PM",
+		"sat": "8AM - 5PM",
+		"sun": "8AM - 4PM"
+	  },
+      "url": "https://patuxentnursery.com/"
+    },
+	{
+      "companyName": "SMaRT Fitness",
+      "address": {
+			"streetAddress": "1506 Danwood Ln",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20721"
+	  },
+      "phoneNumber": "240-245-6969",
+	  "hours": {
+		"mon-fri": "5:30AM - 6PM",
+		"sat": "6AM - 2PM",
+		"sun": "Closed"
+	  },
+      "url": "https://smartfitness.trainerize.com/Home"
+    },
+	{
+      "companyName": "Blue Skies Piano",
+      "address": {
+			"streetAddress": "13224 Dangelo Dr",
+			"city": "Bowie",
+			"state": "MD",
+			"zipCode": "20720"
+	  },
+      "phoneNumber": "301-873-3195",
+	  "hours": {
+		"mon-thurs": "3PM - 8:30PM",
+		"fri-sun": "Closed"
+	  },
+      "url": "https://blueskiespiano.com/"
+    }
+  ]
+}
