@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Short Stack", Helvetica, cursive;
+}
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "hero hero"
+    "sponsered sponsered"
+    "main main"
+    "map map"
+    "contact contact"
+    "footer footer";
+}
+
+.grid > * {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header#top-nav {
+  grid-area: header;
+}
+#branding,
+#navigation-bars {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#branding {
+  flex: 0 1 20%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo img {
+  width: 150px;
+  margin: 0;
+}
+#navigation-bars {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 0 1 100%;
+  text-transform: uppercase;
+}
+li {
+  padding: 1rem;
+}
+ul {
+  justify-content: flex-end;
+}
+a {
+  color: white;
+}
+button {
+  background: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  color: #12a5f4;
+}
+
+#nav-2 a {
+  color: white;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+#hero {
+  grid-area: hero;
+  background-image: url("../images/hero.jpg");
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-text {
+  color: white;
+  position: absolute;
+  left: 5em;
+}
+/* Sponsered By Scroll Bar powered by Codepen. I do not own this content. https://codepen.io/studiojvla/pen/qVbQqW?editors=1100 */
+#sponsered_by {
+  grid-area: sponsered;
+}
+.slider {
+  align-items: center;
+  background: #e3e3e3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+main {
+  grid-area: main;
+  flex-flow: column;
+}
+
+main h2,
+.article h2 {
+  background-color: #65498c;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.article_image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.article_image img {
+  width: 95%;
+}
+.article {
+  grid-area: article;
+  display: block;
+  flex-direction: column;
+}
+button {
+  background-color: #f2bc1b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 200px;
+  border: 0 none;
+  border-radius: 5px;
+}
+.map {
+  grid-area: map;
+  background-color: #27b9f2;
+  margin-right: 1em;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 20em;
+  width: 500px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 20em;
+  width: 500px;
+}
+iframe {
+  width: 500px;
+  height: 20em;
+}
+.contact {
+  grid-area: contact;
+  background-color: #27b9f2;
+  flex-flow: column;
+  max-height: 20em;
+}
+.contact > * {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+.phone {
+  color: #7e0202;
+  margin-right: 5px;
+}
+.contact h3 {
+  font-size: 1.5em;
+}
+.contact img {
+  width: 2.5em;
+  padding-right: 1em;
+}
+.social_share {
+  flex-flow: row;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social_share img {
+  width: 3em;
+  padding: 0.5em;
+}
+.social_share img:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 1em;
+  grid-column: footer;
+  background-color: #f2bc1b;
+  min-height: 50px;
+}

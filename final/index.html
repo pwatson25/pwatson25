@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston | Peter J Watson | WDD 230</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+
+</head>
+<body>
+  <div class="grid">
+
+  <header>
+      <img id="logo" src="/lesson4/images/weather_icon.svg" alt="weather_icon">
+      <h1>Bree<em>z</em>y Ea<em>z</em>y Weather</h1>
+  </header>
+  <nav>
+  <ul  class="menu">
+    <li><a class="ham" href="#">☰ Menu</a></li>
+    <li><a href="/lesson11/index.html">Home</a></li>
+    <li><a href="#" class="active">Preston</a></li>
+    <li><a href="/lesson11/Soda Springs.html">Soda Springs</a></li>
+    <li><a href="/lesson11/Fish Haven.html">Fish Haven</a></li>
+    <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+    <li><a href="/lesson11/gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+  <main>
+      <div class="hero">
+          <picture class="hero_image">
+            <img src="https://storage.googleapis.com/pwatson25_photos/weather_background_2.svg" alt="hero image">
+          </picture>
+
+  <div class="map">
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=preston%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="contact">
+    <h3>Peter J Watson</h3>
+    <h3>📧 peterwatson122@gmail.com</h3>
+    <h3><span class="phone">☎</span>555-555-5555</h3>
+    <div>
+    <img src="https://storage.googleapis.com/pwatson25_photos/facebook.png" alt="placeholder social share icons">
+    <img src="https://storage.googleapis.com/pwatson25_photos/pinterest.png" alt="placeholder social share icons">
+    <img src="https://storage.googleapis.com/pwatson25_photos/youtube.png" alt="placeholder social share icons">
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+    </div>
+    Last Updated: 
+    <span id="lastUpdate"></span>
+  </footer>
+</div>
+<script defer src="js/javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'Annie Use Your Telescope', 'Short Stack'
+    ]
+  }
+});
+</script>
+</body>
+</html>

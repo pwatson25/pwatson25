@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    console.log(jsonObject);  // temporary checking for valid response and data parsing
     const photos = jsonObject;
     const cards = document.querySelector('.cards');
 

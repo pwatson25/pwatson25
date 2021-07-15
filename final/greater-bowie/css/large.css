@@ -1,0 +1,22 @@
+@media only screen and (min-width: 860px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "header header header header header header"
+      "hero hero hero hero hero hero"
+      "sponsered sponsered sponsered sponsered sponsered sponsered"
+      ". main main main main ."
+      ". map map contact contact ."
+      "footer footer footer footer footer footer";
+  }
+  .hero img {
+    max-width: 100%;
+  }
+  picture.photo:hover {
+    box-shadow: 0 0 20px #111;
+    border-radius: 0 0 5px 5px;
+  }
+}
