@@ -40,8 +40,9 @@
 	  },
       "phoneNumber": "301-683-7997",
 	  "hours": {
-		"sunFri": "12PM - 8PM",
-		"sat": "11AM - 10PM"
+		"monFri": "12PM - 8PM",
+		"sat": "11AM - 10PM",
+		"sun": "12PM - 8PM"
 	  },
       "url": "https://www.skyzone.com/bowie"
     },
@@ -69,7 +70,7 @@
 	  },
       "phoneNumber": "301-218-4769",
 	  "hours": {
-		"mon-fri": "7AM - 5PM",
+		"monFri": "7AM - 5PM",
 		"sat": "8AM - 5PM",
 		"sun": "8AM - 4PM"
 	  },
