@@ -6,6 +6,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
+    console.log(towns);
+
     const cards = document.querySelector('.cards');
 
     const name = towns.filter(x => x.name == 'Preston' || x.name == 'Soda Springs' || x.name == 'Fish Haven');

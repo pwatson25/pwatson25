@@ -11,6 +11,23 @@
       ". map map contact contact ."
       "footer footer footer footer footer footer";
   }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section > div {
+    padding: 1em;
+  }
+
+  section:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+  }
+
   .menu {
     display: flex;
   }

@@ -1,11 +1,17 @@
-let req = new XMLHttpRequest();
+fetch('https://pwatson25.github.io/final/greater-bowie/data/companies.json')
+    .then((response) => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
 
-req.onreadystatechange = () => {
-  if (req.readyState == XMLHttpRequest.DONE) {
-    console.log(req.responseText);
-  }
-};
+        // let title = jsObject.title;
+        // let explanation = jsObject.explanation;
 
-req.open("PUT", "https://api.jsonbin.io/s", true);
-req.setRequestHeader("secret-key", "<$2b$10$iDkYE7Unw8IB5oe5eHwqguCaTvHTT6ePueg7T4ltE3rUwOw5.7U0i>");
-req.send();
+        // document.getElementById('title').textContent = (title);
+        // document.getElementById('explanation').textContent = (explanation);
+
+        // const imagesrc = jsObject.url;
+        // const desc = jsObject.title;
+        // document.getElementById('photo').setAttribute('src', imagesrc);
+        // document.getElementById('photo').setAttribute('alt', desc);
+
+    });
