@@ -24,7 +24,7 @@ fetch(requestURL)
 
       h2.textContent = `${buisness.companyName}`;
       h3.textContent = `${buisness.address.streetAddress}`;
-      p.textContent = `Hours: \n Mon-Fri: ${buisness.hours.mon-fri}`;
+      p.innerHTML = `<span style="font-weight:bold">Hours:</span> <br/><br/> Mon-Fri: ${buisness.hours.monFri}`;
       p2.textContent = `Phone Number: ${buisness.phoneNumber}`;
       button.innerHTML = "Visit...";
       button.setAttribute('onclick', `location.href="${buisness.url}"`);
