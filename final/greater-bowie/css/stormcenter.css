@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(rgba(71, 11, 11, 0.8), rgba(240, 8, 8, 0.5));
+}
+@media only screen and (min-width: 860px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "header header header header header header"
+      ". main main main main ."
+      "footer footer footer footer footer footer";
+  }
+}
+@media only screen and (min-width: 468px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      ". main main main main ."
+      "footer footer footer footer footer footer";
+  }
+}
+main {
+  margin-top: 10em;
+}
+#weatherForm {
+  min-width: 300px;
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  display: block;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+}
+#weatherForm input,
+#weatherForm textarea {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+.title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #393939;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-weight: normal;
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #d12229;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  border: 0 none;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #d12229;
+}
+.selection {
+  display: flex;
+  margin-right: 2.5rem;
+}
+#rating-value {
+  font-weight: bold;
+}
+.col-sm-4 {
+  margin-bottom: 1.3em;
+}
+
+.card {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  background: linear-gradient(
+    0deg,
+    rgba(57, 57, 57, 1) 35%,
+    rgba(228, 240, 251, 1) 100%
+  );
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title h2 {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+.price,
+.option {
+  position: relative;
+  z-index: 2;
+}
+.price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+.option ul {
+  margin: 0;
+  padding: 0;
+}
+.option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+.card a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: black;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card a:hover {
+  text-decoration: none;
+}

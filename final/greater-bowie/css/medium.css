@@ -8,6 +8,7 @@
       "hero hero hero hero hero hero"
       "sponsered sponsered sponsered sponsered sponsered sponsered"
       ". main main main main ."
+      ". forecast forecast forecast forecast ."
       ". map map contact contact ."
       "footer footer footer footer footer footer";
   }
@@ -15,18 +16,10 @@
     display: flex;
     flex-wrap: wrap;
   }
-  /* section > div {
-    padding: 1em;
-  }
 
-  section:nth-child(odd) {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  section:nth-child(even) {
-    display: flex;
+  .forecast {
     flex-direction: row;
-  } */
+  }
 
   .menu {
     display: flex;
@@ -41,12 +34,12 @@
   .menu li:first-child {
     display: none;
   }
-  .article_image {
+  /* .article_image {
     display: block;
   }
   .article_image img {
     width: 45%;
     margin: 1% 0 2% 1%;
     float: right;
-  }
+  } */
 }

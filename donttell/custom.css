@@ -63,34 +63,7 @@ body {
   font-weight: 600;
 }
 
-.business2 .img {
-  background-color: #bfc2c7;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 6px solid var(--dark);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.business2 .img img {
-  width: 80%;
-  padding: 10px 0;
-}
-
-.business2 .infos {
-  position: absolute;
-  bottom: 1px;
-}
-
-.business2 .infos > div {
-  display: flex;
-  margin: 5px;
-}
-
-.business2 .infos > div img {
+.icon {
   width: 25px;
   height: 25px;
   margin-right: 10px;
@@ -103,6 +76,7 @@ body {
   font-size: 0.8rem;
   margin: 5px 0;
   font-weight: 500;
+  display: flex;
 }
 
 /* back*/
