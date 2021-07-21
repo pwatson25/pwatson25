@@ -1,4 +1,4 @@
-fetch('https://pwatson25.github.io/final/greater-bowie/data/companies.json')
+fetch('https://malhermon.github.io/final/json/file.json')
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);

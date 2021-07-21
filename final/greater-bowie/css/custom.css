@@ -11,16 +11,15 @@ body {
   position: relative;
 }
 
-.business2 {
+.company {
   display: flex;
   align-items: center;
   min-height: 100vh;
   justify-content: center;
-  background-color: #131417;
 }
 
-.business2 .front,
-.business2 .back {
+.company .front,
+.company .back {
   background-color: var(--dark);
   width: 280px;
   height: 480px;
@@ -30,40 +29,40 @@ body {
   position: relative;
 }
 
-.business2 h1,
-.business2 h2,
-.business2 p {
+.company h1,
+.company h2,
+.company p {
   margin: 0;
   color: #eee;
 }
 
-.business2 .red {
+.company .red {
   height: 35%;
   background-color: var(--red);
 }
 
-.business2 .head {
+.company .head {
   display: flex;
   justify-content: center;
   padding: 25px 0;
 }
 
-.business2 .head img {
+.company .head img {
   width: 40px;
 }
 
-.business2 .head > div {
+.company .head > div {
   text-align: center;
   margin: 0 10px;
   text-transform: uppercase;
 }
 
-.business2 .head > div p {
+.company .head > div p {
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-.business2 .img {
+.company .img {
   background-color: #bfc2c7;
   padding: 10px;
   box-sizing: border-box;
@@ -75,48 +74,48 @@ body {
   justify-content: center;
 }
 
-.business2 .img img {
+.company .img img {
   width: 80%;
   padding: 10px 0;
 }
 
-.business2 .infos {
+.company .infos {
   position: absolute;
   bottom: 1px;
 }
 
-.business2 .infos > div {
+.company .infos > div {
   display: flex;
   margin: 5px;
 }
 
-.business2 .infos > div img {
-  width: 25px;
-  height: 25px;
+.company .infos > div img {
+  width: 2em;
+  height: 2em;
   margin-right: 10px;
   background-color: var(--red);
   padding: 8px;
   border-radius: 7px;
 }
 
-.business2 .infos > div p {
+.company .infos > div p {
   font-size: 0.8rem;
   margin: 5px 0;
   font-weight: 500;
 }
 
 /* back*/
-.business2 .back .top {
+.company .back .top {
   width: 100%;
   box-sizing: border-box;
   height: 58%;
-  background: url("https://raw.githubusercontent.com/MohcineDev/Business-Card/main/imgs/e.webp")
+  background: url("https://raw.githubusercontent.com/MohcineDev/company-Card/main/imgs/e.webp")
     center;
   filter: contrast(160%);
   position: relative;
 }
 
-.business2 .back .top::after {
+.company .back .top::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -125,16 +124,16 @@ body {
   background: linear-gradient(rgba(71, 11, 11, 0.8), rgba(240, 8, 8, 0.5));
 }
 
-.business2 .back .top {
+.company .back .top {
   position: relative;
 }
 
-.business2 .back .top div img {
+.company .back .top div img {
   width: 40px;
   margin: 10px;
 }
 
-.business2 .back .top div {
+.company .back .top div {
   position: absolute;
   display: flex;
   flex-direction: column;

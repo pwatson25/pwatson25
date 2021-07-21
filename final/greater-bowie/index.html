@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/small.css">
     <link rel="stylesheet" href="./css/medium.css">
     <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="./css/custom.css">
 
 </head>
 <body>
@@ -46,14 +47,6 @@
         <h1 style="font-size:50px">Educate, Advocate, Connect</h1>
         <h3>Economic Retail, Legislative, Educational & Civic Programs</h3>
         <button id="join_here">Join Here</button>
-        <!-- <h3 id="trusted_by">Trusted by:</h3>
-        <div class="trusted_by_companies">
-        <img src="images/Renner_Associates_Logo.png">
-        <img src="images/SBDC_Bowie_Logo.png">
-        <img src="images/HBH_Logo.svg">
-        <img src="images/UPS-Logo.png">
-        <img src="images/Golden_Days_Logo.png">
-        </div> -->
       </div>
   </div>
   <div id="sponsered_by">
@@ -105,17 +98,42 @@
     </div>
   </div>
   <main>
-    <h1 class="h1_section">Local Town Information</h1>
-    <div class="cards">
+    <!-- <h1 class="h1_section">Local Town Information</h1> -->
+ <div class="company">
+      <!-- <div class="back">
+          <div class="top">
+              <div class="info">
+                  <img src="" alt="">
+                  <h2 class="businessName"></h2>
+                  <p class="webURL"></p>
+              </div>
+          </div>
+          <div class="webicon">
+              <div class="infos">
+             <div>
+              <img src="./images/call.svg">
+                 <div>
+                     <p class="phoneNumber"></p>
+                 </div>
+             </div>
+             <div>
+              <img src="./images/clock.svg">
+                 <div>
+                     <p class="monFri"></p>
+                     <p class="sat"></p>
+                 </div>
+             </div>
+             <div>
+              <img src="./images/pin.svg" >
+                 <div>
+                     <p class="streetAddress"></p>
+                     <p class="city"></p>
+                 </div>
+             </div>
+         </div>
+         </div> -->
     </div>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
+
   </main>
 
   <div class="map">
@@ -146,7 +164,7 @@
 </div>
 <script src="./javascript/javascript.js"></script>
 <script src="./javascript/test.js"></script>
-<script src="./javascript/buisness.js"></script>
+<script src="./javascript/business.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
   WebFont.load({
@@ -157,5 +175,17 @@
   }
 });
 </script>
+<!-- <script>
+  To repeate buisness card elements
+
+function multiplyNode(node, count, deep) {
+for (var i = 0, copy; i < count - 1; i++) {
+  copy = node.cloneNode(deep);
+  node.parentNode.insertBefore(copy, node);
+}
+}
+
+multiplyNode(document.querySelector('.business2'), 3, true);
+</script> -->
 </body>
 </html>

@@ -19,9 +19,9 @@
   .cards > section {
     flex-direction: column;
   }
-  section > div {
+  /* section > div {
     padding: 0;
-  }
+  } */
   .hero img {
     max-width: 100%;
   }

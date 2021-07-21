@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  section > div {
+  /* section > div {
     padding: 1em;
   }
 
@@ -26,7 +26,7 @@
   section:nth-child(even) {
     display: flex;
     flex-direction: row;
-  }
+  } */
 
   .menu {
     display: flex;
