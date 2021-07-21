@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 GitHub | Peter J Watson | BYU-Idaho</title>
+    <meta name="description" content="Weather Site page for Peter Watson at Brigham Young University-Idaho">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/small.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+</head>
+<body>
+
+<div class="grid">
+
+<header id="top-nav">
+    <section id="branding">
+      <div class="logo"><img src="./images/greater-bowie.png">
+    <section id="navigation-bars">
+      <nav id="nav-1">
+        <ul>
+          <li><a href="#"></a><img src="images/facebook.svg"></a></li>
+          <li><a href="#"><img src="images/twitter.svg"></a></li>
+          <li><a href="#"><img src="images/instagram.svg"></a></li>
+          <li><a href="#"><img src="images/reddit.svg"></a></li>
+          <li>
+            <button>Sign Up / Sign In</button>
+          </li>
+        </ul>
+      </nav>
+      <nav id="nav-2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">City</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+<main>
+<form id="weatherForm" method="get" action="thanks.html">
+  <div class="tab">
+    <h2 class="title">Contact Information</h2>
+    <h3 class="subtitle">Tell us who you are and how we can contact you!</h3>
+  <!-- One "tab" for each step in the form: -->
+    <p>
+    <input type="text" class="required" name="firstname" id="fname" placeholder="First Name" pattern="[A-Za-z-\.\s]{3,}">
+    </p>
+    <p>
+    <input type="text" class="required" name="lastname" id="lname" placeholder="Last Name" pattern="[A-Za-z-\.\s]{3,}">
+    </p>
+    <p>
+    <input type="text" name="title" id="title" placeholder="COO/CCO">
+    </p>
+    
+  </div>
+  <div class="tab">
+<h2 class="title">Company Info</h2>
+      <h3 class="subtitle">Tell us about your company</h3>
+    <p>
+      <input type="text" name="email" id="email" class="required" placeholder="johndoe@mail.com">
+    </p>
+    <p>
+    <input type="tel" name="phone" placeholder="Cell Number">
+    </p>
+    <p>
+    <input type="text" class="required" name="businessName"  placeholder="Business Name">
+    </p>
+    <p>
+    <input type="text" name="businessAddress"  placeholder="Business Address">
+    </p>
+    <p>
+    <input type="text" name="businessWebsite"  placeholder="Business Website">
+    </p>    
+    <label class="top">Business Description: </label><br><br>
+    <textarea name="comments" id="comments">
+    </textarea>
+  </div>
+  <div class="tab">
+  <h2 class="title">Additional Information</h2>
+      <h3 class="subtitle">What else should we know?</h3>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <h2>Non-Profit</h2>
+                </div>
+                <div class="price">
+                  <h4><sup>$</sup>100</h4>
+                </div>
+                <div class="option">
+                  <ul>
+                  <li>  10 GB Space </li>
+                  <li>  3 Domain Names </li>
+                  <li>  20 Email Address </li>
+                  <li></i> Live Support </li>
+                  </ul>
+                </div>
+                <a href="#">Order Now </a>
+              </div>
+            </div>
+            <!-- END Col one -->
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <h2>Bronze</h2>
+                </div>
+                <div class="price">
+                  <h4><sup>$</sup>200</h4>
+                </div>
+                <div class="option">
+                  <ul>
+                  <li>  50 GB Space </li>
+                  <li>  5 Domain Names </li>
+                  <li>  Unlimited Email Address </li>
+                  <li>  Live Support </li>
+                  </ul>
+                </div>
+                <a href="#">Order Now </a>
+              </div>
+            </div>
+            <!-- END Col two -->
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <h2>Silver</h2>
+                </div>
+                <div class="price">
+                  <h4><sup>$</sup>100</h4>
+                </div>
+                <div class="option">
+                  <ul>
+                  <li>  Unlimited GB Space </li>
+                  <li>  30 Domain Names </li>
+                  <li>  Unlimited Email Address </li>
+                  <li>  Live Support </li>
+                  </ul>
+                </div>
+                <a href="#">Order Now </a>
+              </div>
+            </div>
+            <!-- END Col three -->
+            <div class="col-sm-4">
+                <div class="card text-center">
+                  <div class="title">
+                    <h2>Gold</h2>
+                  </div>
+                  <div class="price">
+                    <h4><sup>$</sup>1000</h4>
+                  </div>
+                  <div class="option">
+                    <ul>
+                    <li>  Unlimited GB Space </li>
+                    <li>  30 Domain Names </li>
+                    <li>  Unlimited Email Address </li>
+                    <li>  Live Support </li>
+                    </ul>
+                  </div>
+                  <a href="#">Order Now </a>
+                </div>
+              </div>
+            <!-- END Col four -->
+
+          </div>
+        </div>
+      </div>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+</main>
+<footer>
+    <div>
+    &copy; <span id="currentYear"></span> | Peter J Watson | Germany | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+ </div>
+ Last Updated: 
+ <span id="lastUpdate"></span>
+</footer>
+</div>
+
+<script src="./javascript/javascript.js"></script>
+<script defer src="./javascript/join.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+  google: {
+    families: [
+        'IBM Plex Sans', 'Lato'
+    ]
+  }
+});
+</script>
+</body>
+</html>
+
