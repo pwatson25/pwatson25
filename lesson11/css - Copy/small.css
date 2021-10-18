@@ -1,19 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Short Stack", Helvetica, cursive;
 }
-
 .announcement {
   grid-area: announcement;
   display: none;
   background-color: #f21313;
-  border: 0 solid#F21313;
+  border: 0px solid#F21313;
   border-radius: 5px;
 }
-
 .close {
   cursor: pointer;
   position: absolute;
@@ -27,11 +24,11 @@ body {
 .close:hover {
   font-size: 2.5em;
 }
-
 .grid {
   max-width: 100%;
   margin: 0 auto;
   display: grid;
+
   grid-template-areas:
     "announcement announcement"
     "header header"
@@ -49,45 +46,34 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 header {
   grid-area: header;
   background-color: #27b9f2;
 }
-
 header > img {
   float: left;
   width: 6rem;
   padding: 0.75em;
 }
-
 nav {
   grid-area: nav;
   background-color: #f2bc1b;
 }
-
 .menu {
   list-style: none;
   padding: 0;
 }
-
-.menu li {
-  display: none;
-}
-
-.responsive li {
-  display: block;
-}
-
 .menu li:first-child {
   display: block;
 }
-
+.menu li {
+  display: none;
+}
 .menu a {
   display: block;
   color: #6c0404;
   text-align: center;
-  padding: 0 16px;
+  padding: 0px 16px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -95,11 +81,12 @@ nav {
 .menu a:hover {
   text-decoration: underline;
 }
-
 li a.active {
   text-decoration: underline;
 }
-
+.responsive li {
+  display: block;
+}
 .hero img {
   max-width: 100%;
 }
@@ -111,7 +98,6 @@ h5,
 h6 {
   font-family: "Annie Use Your Telescope", cursive;
 }
-
 main {
   grid-area: main;
   flex-flow: column;
@@ -125,7 +111,6 @@ main h2,
   padding: 0.5em;
   width: 100%;
 }
-
 .current_weather p {
   padding-left: 1em;
 }
@@ -133,11 +118,9 @@ main h2,
 .forecast > img {
   padding: 10px;
 }
-
 .forecast {
   width: -webkit-fill-available;
 }
-
 .responsive-table {
   display: block;
 }
@@ -158,19 +141,15 @@ main h2,
   align-content: center;
   justify-content: center;
 }
-
 .forecast-icon img {
   width: 5em;
 }
-
 .forecast-max {
   font-size: 1.3em;
 }
-
 .forecast-min {
   margin-top: 8px;
 }
-
 p.forecast:hover {
   background: #c8f1c5;
 }
@@ -187,7 +166,6 @@ p.forecast:hover {
   .responsive-table {
     display: flex;
   }
-
   [class^="day-section"] {
     flex-grow: 1;
   }
@@ -198,20 +176,18 @@ p.forecast:hover {
   justify-content: center;
   align-content: center;
 }
-
 .article_image img {
   width: 95%;
 }
-
 .article {
   grid-area: article;
   display: block;
   flex-direction: column;
 }
-
 button {
   background-color: #f2bc1b;
   color: white;
+  border: none;
   padding: 10px 20px;
   font-size: 12px;
   font-weight: bold;
@@ -220,72 +196,60 @@ button {
   border: 0 none;
   border-radius: 5px;
 }
-
 .map {
   grid-area: map;
   background-color: #27b9f2;
   margin-right: 1em;
 }
-
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 20em;
   width: 500px;
 }
-
 .mapouter {
   position: relative;
   text-align: right;
   height: 20em;
   width: 500px;
 }
-
 iframe {
   width: 500px;
   height: 20em;
 }
-
 .contact {
   grid-area: contact;
   background-color: #27b9f2;
   flex-flow: column;
   max-height: 20em;
 }
-
 .contact > * {
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-content: center;
 }
-
 .phone {
   color: #7e0202;
   margin-right: 5px;
 }
-
 .contact h3 {
   font-size: 1.5em;
 }
-
 .contact img {
   width: 2.5em;
   padding-right: 1em;
 }
-
 .social_share {
   flex-flow: row;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-
 .social_share img {
   width: 3em;
   padding: 0.5em;
 }
-
 .social_share img:hover {
   cursor: pointer;
 }

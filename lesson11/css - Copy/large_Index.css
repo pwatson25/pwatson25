@@ -5,12 +5,12 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
       "header header header header header header"
-      "hero hero hero hero hero hero"
-      "sponsered sponsered sponsered sponsered sponsered sponsered"
+      "nav nav nav nav nav nav"
       ". main main main main ."
-      ". forecast forecast forecast forecast ."
-      ". map map contact contact ."
+      ". article article article article ."
+      ". . contact contact . ."
       "footer footer footer footer footer footer";
   }
   .cards {
@@ -20,14 +20,7 @@
   .cards > section {
     flex-direction: column;
   }
-  /* section > div {
+  section > div {
     padding: 0;
-  } */
-  .hero img {
-    max-width: 100%;
   }
-  /* picture.photo:hover {
-    box-shadow: 0 0 20px #111;
-    border-radius: 0 0 5px 5px;
-  } */
 }

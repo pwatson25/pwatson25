@@ -1,0 +1,26 @@
+@media only screen and (min-width: 860px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "header header header header header header"
+      ". main main main main ."
+      "footer footer footer footer footer footer";
+  }
+}
+@media only screen and (min-width: 468px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      ". main main main main ."
+      "footer footer footer footer footer footer";
+  }
+}
+main {
+  margin-top: 10em;
+}

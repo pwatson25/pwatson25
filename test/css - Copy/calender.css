@@ -15,11 +15,16 @@ body {
   overflow: none;
   position: relative;
   max-width: 790px;
-  padding: 0 0;
+  padding: 0px 0;
   height: 500px;
   margin: 20px auto;
   background: #27b9f2;
-  background: -moz-linear-gradient(right, #27b9f2 0, #00c9fb 80%, #00c9fb 100%);
+  background: -moz-linear-gradient(
+    right,
+    #27b9f2 0%,
+    #00c9fb 80%,
+    #00c9fb 100%
+  );
   background: -webkit-linear-gradient(
     right,
     #52a0fd 0%,
@@ -38,6 +43,9 @@ body {
 /*  Events display */
 .events-container {
   overflow-y: scroll;
+  /* height: 100%; */
+  /* float: right; */
+  /* margin: -172px auto; */
   font: 13px "Annie Use Your Telescope", cursive;
   display: flex;
   flex-direction: column;
@@ -86,7 +94,7 @@ body {
 .calendar-container {
   float: left;
   position: relative;
-  margin: 0 auto;
+  margin: 0px auto;
   height: 100%;
   background: #fff;
   font: 13px "Annie Use Your Telescope", cursive;

@@ -1,0 +1,33 @@
+@media only screen and (min-width: 468px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      ". main main main main ."
+      ". article article article article ."
+      ". . contact contact . ."
+      "footer footer footer footer footer footer";
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section > div {
+    padding: 1em;
+  }
+
+  section:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  section:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+  }
+}
