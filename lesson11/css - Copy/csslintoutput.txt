@@ -1,0 +1,47 @@
+
+small.css
+   4:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+   7:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  11:12  ×  Unexpected unit                                                                     length-zero-no-unit                      
+  14:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  27:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  32:3   ×  Unexpected empty line before declaration                                            declaration-empty-line-before            
+  49:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  53:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  58:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  62:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  66:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  69:1   ×  Expected selector ".menu li" to come before selector ".menu li:first-child"         no-descending-specificity                
+  69:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  72:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  76:13  ×  Unexpected unit                                                                     length-zero-no-unit                      
+  84:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  87:1   ×  Expected selector ".responsive li" to come before selector ".menu li:first-child"   no-descending-specificity                
+  87:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+  90:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 101:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 114:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 121:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 124:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 144:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 147:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 150:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 153:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 169:3   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 179:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 182:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 187:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 196:3   ×  Unexpected duplicate "border"                                                       declaration-block-no-duplicate-properties
+ 199:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 204:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 210:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 216:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 220:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 226:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 232:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 236:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 239:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 243:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 249:1   ×  Expected empty line before rule                                                     rule-empty-line-before                   
+ 253:1   ×  Expected empty line before rule                                                     rule-empty-line-before
+

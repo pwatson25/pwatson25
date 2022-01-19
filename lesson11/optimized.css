@@ -1,0 +1,358 @@
+/*** uncss> filename: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css ***/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/*# sourceMappingURL=normalize.min.css.map */ 
+/*** uncss> filename: css/small.css ***/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Short Stack", Helvetica, cursive;
+}
+
+.announcement {
+  grid-area: announcement;
+  display: none;
+  background-color: #f21313;
+  border: 0 solid#F21313;
+  border-radius: 5px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  color: whitesmoke;
+  margin-top: 12px;
+  font-size: 2em;
+  padding: 8px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  font-size: 2.5em;
+}
+
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "announcement announcement"
+    "header header"
+    "nav nav"
+    "main main"
+    "article article"
+    "map map"
+    "contact contact"
+    "footer footer";
+}
+
+.grid > * {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+  background-color: #27b9f2;
+}
+
+header > img {
+  float: left;
+  width: 6rem;
+  padding: 0.75em;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #f2bc1b;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: none;
+}
+
+.menu li:first-child {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  color: #6c0404;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+li a.active {
+  text-decoration: underline;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+h2,
+h3 {
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+main {
+  grid-area: main;
+  flex-flow: column;
+}
+
+main h2,
+.article h2 {
+  background-color: #65498c;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.current_weather p {
+  padding-left: 1em;
+}
+
+.forecast {
+  width: -webkit-fill-available;
+}
+
+.responsive-table {
+  display: block;
+}
+
+[class^="day-section"] {
+  margin-bottom: 1rem;
+}
+
+.forecast-day,
+.forecast-icon,
+.data {
+  padding: 1rem;
+  border: 1px solid #333;
+  margin: -1px 0 0 -1px;
+  box-sizing: border-box;
+  background: linear-gradient(#eee, #96d9c6);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.forecast-icon img {
+  width: 5em;
+}
+
+.forecast-max {
+  font-size: 1.3em;
+}
+
+.forecast-min {
+  margin-top: 8px;
+}
+
+.forecast-day {
+  background: #65498c;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .responsive-table {
+    display: flex;
+  }
+
+  [class^="day-section"] {
+    flex-grow: 1;
+  }
+}
+
+.article_image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.article_image img {
+  width: 95%;
+}
+
+.article {
+  grid-area: article;
+  display: block;
+  flex-direction: column;
+}
+
+.map {
+  grid-area: map;
+  background-color: #27b9f2;
+  margin-right: 1em;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 20em;
+  width: 500px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 20em;
+  width: 500px;
+}
+
+iframe {
+  width: 500px;
+  height: 20em;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: #27b9f2;
+  flex-flow: column;
+  max-height: 20em;
+}
+
+.contact > * {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.phone {
+  color: #7e0202;
+  margin-right: 5px;
+}
+
+.contact h3 {
+  font-size: 1.5em;
+}
+
+.contact img {
+  width: 2.5em;
+  padding-right: 1em;
+}
+
+footer {
+  margin-top: 1em;
+  grid-column: footer;
+  background-color: #f2bc1b;
+  min-height: 50px;
+}
+ 
+/*** uncss> filename: css/medium.css ***/
+@media only screen and (min-width: 592px) {
+  .current_weather {
+    position: relative;
+    line-height: 1em;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 468px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      ". main main main main ."
+      ". article article article article ."
+      ". map map contact contact ."
+      "footer footer footer footer footer footer";
+  }
+  .menu {
+    display: flex;
+  }
+  .menu li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .menu a {
+    text-align: center;
+  }
+  .menu li:first-child {
+    display: none;
+  }
+  .forecast {
+    flex-direction: row;
+  }
+  .article_image {
+    display: block;
+  }
+  .article_image img {
+    width: 45%;
+    margin: 1% 0 2% 1%;
+    float: right;
+  }
+}
+ 
+/*** uncss> filename: css/large.css ***/
+@media only screen and (min-width: 969px) {
+  .current_weather {
+    position: absolute;
+    top: 19rem;
+    left: 23rem;
+    background: radial-gradient(#eee, #4567aa);
+    width: 16em;
+    height: 16em;
+    border-radius: 0 50% 50% 50%;
+    border: 2px solid black;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.8;
+    line-height: 1em;
+  }
+  .weather_content {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 1.25em;
+    top: 1em;
+    font-weight: bold;
+  }
+  .weather_content h2 {
+    font-size: 1.3em;
+    width: 7.5em;
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "announcement announcement announcement announcement announcement announcement"
+      "header header header header header header"
+      "nav nav nav nav nav nav"
+      ". main main main main ."
+      ". article article article article ."
+      ". map map contact contact ."
+      "footer footer footer footer footer footer";
+  }
+  .hero img {
+    max-width: 100%;
+  }
+}
+
